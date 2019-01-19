@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('subset-GTWalsheim-Bold.woff2') format('woff2'),
+        url('subset-GTWalsheim-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('subset-GTWalsheim-Black.woff2') format('woff2'),
+        url('subset-GTWalsheim-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('subset-IntegralCF-Regular.woff2') format('woff2'),
+        url('subset-IntegralCF-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Integral CF';
+    src: url('subset-IntegralCF-Bold.woff2') format('woff2'),
+        url('subset-IntegralCF-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GT Walsheim';
+    src: url('subset-GTWalsheim.woff2') format('woff2'),
+        url('subset-GTWalsheim.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
