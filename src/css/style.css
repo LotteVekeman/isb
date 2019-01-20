@@ -1,0 +1,42 @@
+/* img {
+  height: 100%;
+  width: 100%;
+
+  filter: grayscale(100%);
+  object-fit: cover;
+} */
+
+.gradient {
+  max-width: 100%;
+  width: 20rem;
+  height: 20rem;
+
+  overflow: hidden;
+
+  border: solid .1rem #97217e;
+  border-radius: 1rem;
+}
+
+.gradient::after {
+  display: block;
+  position: relative;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0,
+      #97217e 100%
+    );
+  margin-top: -150px;
+  height: 150px;
+  width: 100%;
+  content: '';
+}
+
+button {
+  height: 10.5rem;
+  width: 9rem;
+}
+
+button img {
+  vertical-align: centre;
+}

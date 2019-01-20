@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISB - lineup</title>
     <link rel="icon" href="./assets/img/logo/Beveren.svg" />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
   </head>
   <body>
     <header>
@@ -28,7 +29,22 @@
           <h1 class="">Lineup</h1>
           <p>Het programma is onderhevig aan wijzigingen en het weer.</p>
         </header>
-        <p>hier komen mijn filters</p>
+        <form action="index.html" class="filter__form">
+          <input type="hidden" name="action" value="filter" />
+          <label for="day" class="filter__label"> </label>
+          <div id="event">
+            <button type="button">vrijdag 24 aug</button>
+            <button type="button">zaterdag 25 aug</button>
+            <button type="button">
+              <img src="assets/img/days/zondag.png" alt="" />
+            </button>
+          </div>
+          <label for="event" class="filter__label"></label>
+          <div id="event">
+            <button type="button">Voorstelling</button>
+            <button type="button">Straatattractie</button>
+          </div>
+        </form>
       </section>
 
       <section>
