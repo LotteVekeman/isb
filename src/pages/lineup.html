@@ -4,15 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISB - lineup</title>
-    <link rel="icon" href="./assets/img/logo/Beveren.svg" />
-    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="icon" href="../assets/img/logo/Beveren.svg" />
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
     <header>
       <p><span>nl</span> | <span>eng</span></p>
       <nav>
-        <a href="#"
-          ><img src="./assets/img/logo/Beveren.svg" alt="logo Beveren"
+        <a href="../index.html"
+          ><img src="../assets/img/logo/Beveren.svg" alt="logo Beveren"
         /></a>
         <ul>
           <li><a href="#">Lineup</a></li>
@@ -29,20 +29,60 @@
           <h1 class="">Lineup</h1>
           <p>Het programma is onderhevig aan wijzigingen en het weer.</p>
         </header>
-        <form action="index.html" class="filter__form">
+        <form action="lineup.html" class="filter__form">
           <input type="hidden" name="action" value="filter" />
           <label for="day" class="filter__label"> </label>
           <div id="event">
-            <button type="button">vrijdag 24 aug</button>
-            <button type="button">zaterdag 25 aug</button>
-            <button type="button">
-              <img src="assets/img/days/zondag.png" alt="" />
+            <input
+              type="radio"
+              id="switch_3_left"
+              name="switch_3"
+              value="yes"
+              checked
+            />
+            <label for="switch_3_left">vrijdag</label>
+            <input
+              type="radio"
+              id="switch_3_center"
+              name="switch_3"
+              value="maybe"
+            />
+            <label for="switch_3_center">zaterdag</label>
+            <input
+              type="radio"
+              id="switch_3_right"
+              name="switch_3"
+              value="no"
+            />
+            <label for="switch_3_right">zondag</label>
+            <!-- <button type="button">
+              <span class="hidden">vrijdag 24 aug 2018</span>
             </button>
+            <button type="button">
+              <span class="hidden">zaterdag 25 aug 2018</span>
+            </button>
+            <button type="button">
+              <span class="hidden">zondag 26 aug 2018</span>
+              <img src="assets/img/days/zondag.png" alt="" />
+            </button> -->
           </div>
           <label for="event" class="filter__label"></label>
           <div id="event">
-            <button type="button">Voorstelling</button>
-            <button type="button">Straatattractie</button>
+            <input
+              type="radio"
+              id="switch_left"
+              name="switch_2"
+              value="voorstelling"
+              checked
+            />
+            <label for="switch_left">Voorstelling</label>
+            <input
+              type="radio"
+              id="switch_right"
+              name="switch_2"
+              value="straatattractie"
+            />
+            <label for="switch_right">Straatattractie</label>
           </div>
         </form>
       </section>
@@ -109,19 +149,19 @@
                 target="_blank"
                 href="https://www.facebook.com/straattheaterfestivalbeveren/"
               >
-                <img src="./assets/img/logo/facebook.svg" alt=""
+                <img src="../assets/img/logo/facebook.svg" alt=""
               /></a>
             </li>
             <li>
               <a target="_blank" href="https://www.instagram.com/"
-                ><img src="./assets/img/logo/instagram.svg" alt=""
+                ><img src="../assets/img/logo/instagram.svg" alt=""
               /></a>
             </li>
             <li>
               <a
                 target="_blank"
                 href="https://www.youtube.com/channel/UCyLydUlLUg_pBIAaWOKwkxQ"
-                ><img src="./assets/img/logo/youtube.svg" alt=""
+                ><img src="../assets/img/logo/youtube.svg" alt=""
               /></a>
             </li>
           </ul>
@@ -130,22 +170,22 @@
       <section>
         <h2 class="hidden">Sponsors</h2>
         <a target="_blank" href="http://www.winkeldorp.be/">
-          <img src="./assets/img/logo/winkeldorp.svg" alt="" />
+          <img src="../assets/img/logo/winkeldorp.svg" alt="" />
         </a>
         <a
           target="_blank"
           href="https://www.handelsgids.be/sector/beveren/horeca/"
         >
-          <img src="./assets/img/logo/horeca.svg" alt=""
+          <img src="../assets/img/logo/horeca.svg" alt=""
         /></a>
         <a target="_blank" href="http://www.aouteneclats.be/">
-          <img src="./assets/img/logo/scouts.svg" alt="" />
+          <img src="../assets/img/logo/scouts.svg" alt="" />
         </a>
         <a target="_blank" href="http://www.warandeshopping.be/">
-          <img src="./assets/img/logo/warande.svg" alt="" />
+          <img src="../assets/img/logo/warande.svg" alt="" />
         </a>
         <a target="_blank" href="http://beverse-feesten.be/">
-          <img src="./assets/img/logo/beverseFeesten.svg" alt="" />
+          <img src="../assets/img/logo/beverseFeesten.svg" alt="" />
         </a>
       </section>
       <section>

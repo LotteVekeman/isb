@@ -1,10 +1,14 @@
-/* img {
+.hidden {
+  display: none;
+}
+
+.top {
   height: 100%;
   width: 100%;
 
   filter: grayscale(100%);
   object-fit: cover;
-} */
+}
 
 .gradient {
   max-width: 100%;
@@ -38,5 +42,5 @@ button {
 }
 
 button img {
-  vertical-align: centre;
+  vertical-align: middle;
 }
