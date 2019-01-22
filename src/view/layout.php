@@ -3,32 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ISB - error</title>
-    <link rel="icon" href="../assets/img/logo/Beveren.svg" />
+    <title>ISB</title>
+    <link rel="icon" href="assets/img/logo/Beveren.svg" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <p><span>nl</span> | <span>eng</span></p>
+      <form action="index.php">
+      <label for="language" class="language__label">NL</label>
+          <div id="language">
+            <input
+              type="radio"
+              id="switch_nl"
+              name="switch_1"
+              value="Nederland"
+              checked
+            />
+            <p>|</p>
+            <input
+              type="radio"
+              id="switch_eng"
+              name="switch_1"
+              value="English"
+            />
+            <label for="switch_right">ENG</label>
+          </div>
+      </form>
       <nav>
-        <a href="../index.html"
-          ><img src="../assets/img/logo/Beveren.svg" alt="logo Beveren"
+        <a href="index.php"
+          ><img src="assets/img/logo/Beveren.svg" alt="logo Beveren"
         /></a>
         <ul>
-          <li><a href="lineup.html">Lineup</a></li>
-          <li><a href="#">Raak betrokken</a></li>
-          <li><a href="#">Praktisch</a></li>
-          <li><a href="#">Over Ons</a></li>
+          <li><a href="index.php?page=lineup">Lineup</a></li>
+          <li><a href="index.php?page=fallback">Raak betrokken</a></li>
+          <li><a href="index.php?page=fallback">Praktisch</a></li>
+          <li><a href="index.php?page=fallback">Over Ons</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <header>
-        <h1>404 - Pagina niet gevonden</h1>
-        <p>Oeps onze excuses! De verzochte pagina werd niet gevonden</p>
-      </header>
-      <a href="../index.html">Terug naar homepagina</a>
-    </main>
+     <?php echo $content;?>
 
     <footer>
       <section>
@@ -36,7 +50,7 @@
         <article>
           <h3>Festival</h3>
           <ul>
-            <li><a href="lineup.html">Lineup</a></li>
+            <li><a href="pages/lineup.html">Lineup</a></li>
             <li><a href="http://beverse-feesten.be/"> Beverse Feesten</a></li>
             <li>Andere activiteiten</li>
           </ul>
@@ -44,23 +58,23 @@
         <article>
           <h3>Raak betrokken</h3>
           <ul>
-            <li><a href="#">Word vrijwilliger</a></li>
-            <li><a href="#">Zelf Optreden</a></li>
+            <li><a href="pages/fallback.html">Word vrijwilliger</a></li>
+            <li><a href="pages/fallback.html">Zelf Optreden</a></li>
           </ul>
         </article>
         <article>
           <h3>Over</h3>
           <ul>
-            <li><a href="#">Geschiedenis</a></li>
-            <li><a href="#">Vorige edities</a></li>
+            <li><a href="pages/fallback.html">Geschiedenis</a></li>
+            <li><a href="pages/fallback.html">Vorige edities</a></li>
           </ul>
         </article>
         <article>
           <h3>Praktisch</h3>
           <ul>
-            <li><a href="#">Slecht weer</a></li>
-            <li><a href="#">Bereikbaarheid</a></li>
-            <li><a href="#">Contactgegevens</a></li>
+            <li><a href="pages/fallback.html">Slecht weer</a></li>
+            <li><a href="pages/fallback.html">Bereikbaarheid</a></li>
+            <li><a href="pages/fallback.html">Contactgegevens</a></li>
           </ul>
         </article>
         <article>
@@ -71,19 +85,19 @@
                 target="_blank"
                 href="https://www.facebook.com/straattheaterfestivalbeveren/"
               >
-                <img src="../assets/img/logo/facebook.svg" alt=""
+                <img src="assets/img/logo/facebook.svg" alt=""
               /></a>
             </li>
             <li>
               <a target="_blank" href="https://www.instagram.com/"
-                ><img src="../assets/img/logo/instagram.svg" alt=""
+                ><img src="assets/img/logo/instagram.svg" alt=""
               /></a>
             </li>
             <li>
               <a
                 target="_blank"
                 href="https://www.youtube.com/channel/UCyLydUlLUg_pBIAaWOKwkxQ"
-                ><img src="../assets/img/logo/youtube.svg" alt=""
+                ><img src="assets/img/logo/youtube.svg" alt=""
               /></a>
             </li>
           </ul>
@@ -92,22 +106,22 @@
       <section>
         <h2 class="hidden">Sponsors</h2>
         <a target="_blank" href="http://www.winkeldorp.be/">
-          <img src="../assets/img/logo/winkeldorp.svg" alt="" />
+          <img src="assets/img/logo/winkeldorp.svg" alt="" />
         </a>
         <a
           target="_blank"
           href="https://www.handelsgids.be/sector/beveren/horeca/"
         >
-          <img src="../assets/img/logo/horeca.svg" alt=""
+          <img src="assets/img/logo/horeca.svg" alt=""
         /></a>
         <a target="_blank" href="http://www.aouteneclats.be/">
-          <img src="../assets/img/logo/scouts.svg" alt="" />
+          <img src="assets/img/logo/scouts.svg" alt="" />
         </a>
         <a target="_blank" href="http://www.warandeshopping.be/">
-          <img src="../assets/img/logo/warande.svg" alt="" />
+          <img src="assets/img/logo/warande.svg" alt="" />
         </a>
         <a target="_blank" href="http://beverse-feesten.be/">
-          <img src="../assets/img/logo/beverseFeesten.svg" alt="" />
+          <img class="logo" src="assets/img/logo/beverseFeesten.svg" alt="" />
         </a>
       </section>
       <section>
