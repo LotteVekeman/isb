@@ -9,22 +9,22 @@
           <h2 class="hidden">headerinfo</h2>
           <p>#voorstelling</p>
           <dl>
-            <dt><img src="../assets/img/icon/calendar.svg" alt="" /></dt>
+            <dt><img src="assets/img/icon/calendar.svg" alt="" /></dt>
             <dd>vrijdag</dd>
 
-            <dt><img src="../../assets/img/icon/clock.svg" alt="" /></dt>
+            <dt><img src="assets/img/icon/clock.svg" alt="" /></dt>
             <dd>
               18:00-18:40<br/>
                 20:15-20:55
             <dd>
 
-            <dt><img src="../assets/img/icon/location.svg" alt="" /></dt></dt>
+            <dt><img src="assets/img/icon/location.svg" alt="" /></dt></dt>
             <dd>Speelplaats KA/BS De Bevers</dd>
 
-            <dt><img src="../assets/img/icon/nationality.svg" alt="" /></dt></dt>
+            <dt><img src="assets/img/icon/nationality.svg" alt="" /></dt></dt>
             <dd>Nederland & Canada</dd>
 
-            <dt><img src="../assets/img/icon/globe.svg"" alt="" /></dt></dt>
+            <dt><img src="assets/img/icon/globe.svg"" alt="" /></dt></dt>
             <dd><a href="http://www.the-flying-dutchmen.com/">website</a></dd>
           </dl>
           <p>

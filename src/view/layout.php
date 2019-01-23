@@ -1,25 +1,42 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISB</title>
+    <?php echo $css;?>
     <link rel="icon" href="assets/img/logo/Beveren.svg" />
-    <link rel="stylesheet" href="css/style.css" />
+    <script>
+      WebFontConfig = {
+        custom: {
+          families: ["D-DINCondensed", "D-DINCondensed-Bold"],
+          urls: ["assets/fonts/fonts.css"]
+        }
+      };
+
+      (function(d) {
+        var wf = d.createElement("script"),
+          s = d.scripts[0];
+        wf.src = "js/webfont.js";
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+      })(document);
+    </script>
+
   </head>
   <body>
-    <header>
-      <form action="index.php">
-      <label for="language" class="language__label">NL</label>
-          <div id="language">
+    <header class="header">
+      <form action="index.php" class="language">
+      <label for="chooseLanguage" class="language__label">NL</label>
+          <div id="chooseLanguage">
             <input
               type="radio"
               id="switch_nl"
               name="switch_1"
-              value="Nederland"
+              value="Nederlands"
               checked
             />
-            <p>|</p>
             <input
               type="radio"
               id="switch_eng"
@@ -29,10 +46,10 @@
             <label for="switch_right">ENG</label>
           </div>
       </form>
-      <nav>
-        <a href="index.php"
-          ><img src="assets/img/logo/Beveren.svg" alt="logo Beveren"
-        /></a>
+      <nav class="nav">
+        <a href="index.php">
+        <img src="assets/img/logo/Beveren.svg" alt="logo Beveren" height="25px"/>
+        </a>
         <ul>
           <li><a href="index.php?page=lineup">Lineup</a></li>
           <li><a href="index.php?page=fallback">Raak betrokken</a></li>
@@ -45,41 +62,41 @@
      <?php echo $content;?>
 
     <footer>
-      <section>
+      <section class="summary">
         <h2 class="hidden">Summary site</h2>
         <article>
           <h3>Festival</h3>
           <ul>
-            <li><a href="pages/lineup.html">Lineup</a></li>
-            <li><a href="http://beverse-feesten.be/"> Beverse Feesten</a></li>
-            <li>Andere activiteiten</li>
+            <li><a class="footerLink" href="index.php?page=lineup">Lineup</a></li>
+            <li><a class="footerLink" href="http://beverse-feesten.be/"> Beverse Feesten</a></li>
+            <li class="footerLink">Andere activiteiten</li>
           </ul>
         </article>
         <article>
           <h3>Raak betrokken</h3>
           <ul>
-            <li><a href="pages/fallback.html">Word vrijwilliger</a></li>
-            <li><a href="pages/fallback.html">Zelf Optreden</a></li>
+            <li><a class="footerLink" href="index.php?page=fallback">Word vrijwilliger</a></li>
+            <li><a  class="footerLink" href="index.php?page=fallback">Zelf Optreden</a></li>
           </ul>
         </article>
         <article>
           <h3>Over</h3>
           <ul>
-            <li><a href="pages/fallback.html">Geschiedenis</a></li>
-            <li><a href="pages/fallback.html">Vorige edities</a></li>
+            <li><a class="footerLink" href="index.php?page=fallback">Geschiedenis</a></li>
+            <li><a class="footerLink" href="index.php?page=fallback">Vorige edities</a></li>
           </ul>
         </article>
         <article>
           <h3>Praktisch</h3>
           <ul>
-            <li><a href="pages/fallback.html">Slecht weer</a></li>
-            <li><a href="pages/fallback.html">Bereikbaarheid</a></li>
-            <li><a href="pages/fallback.html">Contactgegevens</a></li>
+            <li><a class="footerLink" href="index.php?page=fallback">Slecht weer</a></li>
+            <li><a class="footerLink" href="index.php?page=fallback">Bereikbaarheid</a></li>
+            <li><a class="footerLink" href="index.php?page=fallback">Contactgegevens</a></li>
           </ul>
         </article>
         <article>
           <h3>Volg ons</h3>
-          <ul>
+          <ul class="smedia">
             <li>
               <a
                 target="_blank"
@@ -103,7 +120,7 @@
           </ul>
         </article>
       </section>
-      <section>
+      <section class="sponsors">
         <h2 class="hidden">Sponsors</h2>
         <a target="_blank" href="http://www.winkeldorp.be/">
           <img src="assets/img/logo/winkeldorp.svg" alt="" />
@@ -124,7 +141,7 @@
           <img class="logo" src="assets/img/logo/beverseFeesten.svg" alt="" />
         </a>
       </section>
-      <section>
+      <section class="copyright">
         <p>
           Internationaal TheaterFestival Beveren | Privacy Policy | Cookie
           Policy | Algemene voorwaarden
@@ -132,5 +149,6 @@
         <p>@Lotte Vekeman</p>
       </section>
     </footer>
+    <?php echo $js;?>
   </body>
 </html>

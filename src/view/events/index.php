@@ -75,7 +75,7 @@
               </div>
               <div class="gradientAndForm"></div>
               <img
-                src=""
+                src="assets/img/TheSkyIsTheLimit.jpg"
                 alt="2 artiesten met vrijwillige uit publiek op podium"
               />
             </a>

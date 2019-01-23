@@ -1,9 +1,9 @@
 <main>
-      <header>
+      <header class="pageHeader">
         <h1 class="hidden">International TheaterFestival Beveren</h1>
-        <img src="" alt="" />
+        <img src="assets/img/headerimg@0,5x.png" alt="kleurrijke krijtexplosie met naam festival" />
         <div>
-          <dl>
+          <dl class="info">
             <dt>13</dt>
             <dd>edities</dd>
             <dt>3</dt>
@@ -19,45 +19,33 @@
           <h2>New Names</h2>
           <p>Ontdek hier onze nieuwste artiesten die aanwezig zullen zijn</p>
         </header>
-        <article>
-          <div>
-            <p>vrijdag</p>
-            <h3>The Flying Dutchmen(NL)</h3>
-            <p>The Sky Is The Limit</p>
-          </div>
-          <div class="gradient">
-            <img class="top" src="assets/img/TheSkyIsTheLimit.jpg" alt="" />
-          </div>
-        </article>
-        <article>
-          <div>
-            <p>zaterdag</p>
-            <h3>The Flying Belgian(NL)</h3>
-            <p>Test</p>
-          </div>
-          <div class="gradient">
-            <img class="top" src="assets/img/silento.jpg" alt="" />
-          </div>
-        </article>
-        <article>
-          <div>
-            <p>zondag</p>
-            <h3>Abracadabra(ROK)</h3>
-            <p>Testje</p>
-          </div>
-          <div class="gradient">
-            <img class="top" src="assets/img/krijmfresj.jpg" alt="" />
-          </div>
-        </article>
-        <a href="index.php?page=lineup">Ontdek de volledige lineup</a>
+        <ul>
+          <li>
+            <a href="index.php?page=lineup-detail">
+            <article class="kijker">
+              <p>vrijdag</p>
+              <h3>The Flying Dutchmen(NL)</h3>
+              <p>The Sky Is The Limit</p>
+              <div class="gradient">
+                <img class="top" src="assets/img/TheSkyIsTheLimit.jpg" alt="" />
+              </div>
+            </article>
+            </a>
+          </li>
+
+          <li></li>
+        </ul>
+        <a class="btn" href="index.php?page=lineup">Ontdek de volledige lineup</a>
       </section>
 
-      <section>
+      <section class="edition">
         <header>
           <h2>Trip Down Memory Lane</h2>
           <p>Hieronder zijn is het promofilmpje van vorig jaar te zien</p>
         </header>
-        <a href="youtube.be"> <img src="" alt="" /> </a>
+        <a class="previous" target= "_blank" href="https://www.youtube.com/channel/UCyLydUlLUg_pBIAaWOKwkxQ">
+          <img src="assets/img/previousEdition@0,5x.jpg" alt="" />
+        </a>
       </section>
 
       <section>
