@@ -1,28 +1,28 @@
 @import url(//fonts.googleapis.com/css?family=Roboto);
 
 @font-face {
-  font-family: 'D-DINCondensed-Bold';
+  font-family: D-DINCondensed-Bold;
   src:
-    url('D-DINCondensed-Bold.woff2') format('woff2'),
-    url('D-DINCondensed-Bold.woff') format('woff');
+    url(D-DINCondensed-Bold.woff2) format('woff2'),
+    url(D-DINCondensed-Bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'D-DINCondensed';
+  font-family: D-DINCondensed;
   src:
-    url('D-DINCondensed.woff2') format('woff2'),
-    url('D-DINCondensed.woff') format('woff');
+    url(D-DINCondensed.woff2) format('woff2'),
+    url(D-DINCondensed.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Gobold';
+  font-family: Gobold;
   src:
-    url('Gobold_Regular.woff2') format('woff2'),
-    url('Gobold_Regular.woff') format('woff');
+    url(Gobold_Regular.woff2) format('woff2'),
+    url(Gobold_Regular.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }

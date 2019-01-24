@@ -1,0 +1,26 @@
+.nav {
+  /* display: grid;
+  grid-template-columns: 1% repeat(5, 1fr) 1%; */
+}
+
+.menu {
+  background-color: var(--purple);
+  z-index: 3;
+
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+}
+
+.nav-item {
+  color: white;
+  padding: 1rem;
+
+  &:hover {
+    color: black;
+    cursor: pointer;
+  }
+}

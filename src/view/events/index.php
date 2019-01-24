@@ -1,49 +1,37 @@
 
-    <main>
+    <main class="headerPage">
       <section>
         <header>
           <h1 class="">Lineup</h1>
           <p>Het programma is onderhevig aan (weers)omstandigheden</p>
         </header>
-        <form action="index.php?page=lineup" class="filter__form">
+        <form action="index.php?page=lineup" class="days">
           <input type="hidden" name="action" value="filter" />
-          <label for="day" class="filter__label"> </label>
-          <div id="event">
+          <div class="chooseDay">
             <input
               type="radio"
-              id="switch_2_left"
+              id="switch_friday"
               name="switch_2"
               value="friday"
               checked
             />
-            <label for="switch_2_left">vrijdag</label>
+            <label class="fiday" for="switch_friday">vrijdag</label>
             <input
               type="radio"
-              id="switch_2_center"
+              id="switch_saturday"
               name="switch_2"
               value="saturday"
             />
-            <label for="switch_2_center">zaterdag</label>
+            <label for="switch_saturday">zaterdag</label>
             <input
               type="radio"
-              id="switch_2_right"
+              id="switch_sunday"
               name="switch_2"
               value="sunday"
             />
-            <label for="switch_2_right">zondag</label>
-            <!-- <button type="button">
-              <span class="hidden">vrijdag 24 aug 2018</span>
-            </button>
-            <button type="button">
-              <span class="hidden">zaterdag 25 aug 2018</span>
-            </button>
-            <button type="button">
-              <span class="hidden">zondag 26 aug 2018</span>
-              <img src="assets/img/days/zondag.png" alt="" />
-            </button> -->
+            <label for="switch_sunday">zondag</label>
           </div>
-          <label for="event" class="filter__label"></label>
-          <div id="event">
+          <div class="chooseEvent">
             <input
               type="radio"
               id="switch_left"
@@ -75,7 +63,7 @@
               </div>
               <div class="gradientAndForm"></div>
               <img
-                src="assets/img/TheSkyIsTheLimit.jpg"
+                src="assets/img/TheSkyIsTheLimit.jpg" width="300px"
                 alt="2 artiesten met vrijwillige uit publiek op podium"
               />
             </a>

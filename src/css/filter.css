@@ -1,0 +1,154 @@
+/* #Language */
+
+.language {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chooseLanguage input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: .1rem;
+  width: .1rem;
+  border: 0;
+  overflow: hidden;
+}
+
+.chooseLanguage label {
+  float: left;
+
+  display: inline-block;
+  width: 6rem;
+  color: rgba(0, 0, 0, .6);
+
+  font-size: 1.4rem;
+  text-align: center;
+  padding: .4rem 1.4rem;
+  /* border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem; */
+
+  border-right: solid .1rem black;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fdf7f7;
+  }
+}
+
+.chooseLanguage input:checked + label {
+  font-weight: bold;
+  color: var(--pink);
+  border-bottom: solid .2rem var(--pink);
+}
+
+/* #Days */
+
+.days {
+  /* display: flex; */
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chooseDay {
+  padding: 4rem;
+  overflow: hidden;
+
+  /* display: flex;
+  flex-direction: column; */
+  justify-content: center;
+}
+
+.chooseDay input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: .1rem;
+  width: .1rem;
+  border: 0;
+  overflow: hidden;
+}
+
+.chooseDay label {
+  width: 13.5rem;
+  height: 15.75rem;
+  display: inline-block;
+
+  font-size: 1.4rem;
+  text-align: center;
+
+  padding: .75rem 1.4rem;
+  border-radius: .5rem;
+  border: no-border;
+
+  content: '';
+
+  background-color: white;
+  color: black;
+
+  margin-bottom: 2.4rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.chooseDay input:checked + label {
+  font-weight: bold;
+  color: white;
+
+  background-image: url(../assets/img/days/vrijdagChecked.png);
+
+  /* background-color: var(--pink); */
+}
+
+.friday {
+  background-image: url(../assets/img/days/vrijdag.png);
+  background-repeat: no-repeat;
+}
+
+/* #shows */
+
+.chooseEvent {
+  padding: 4rem;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+}
+
+.chooseEvent input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  height: .1rem;
+  width: .1rem;
+  border: 0;
+  overflow: hidden;
+}
+
+.chooseEvent label {
+  display: inline-block;
+  /* width: 6rem; */
+  color: rgba(0, 0, 0, .6);
+
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1rem 1.5rem;
+
+  border: solid .1rem var(--pink);
+  border-radius: .8rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #fdf7f7;
+  }
+}
+
+.chooseEvent input:checked + label {
+  border: no-border;
+  background-color: var(--pink);
+
+  color: white;
+  font-weight: bold;
+}

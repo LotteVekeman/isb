@@ -28,8 +28,7 @@
   <body>
     <header class="header">
       <form action="index.php" class="language">
-      <label for="chooseLanguage" class="language__label">NL</label>
-          <div id="chooseLanguage">
+          <div class="chooseLanguage">
             <input
               type="radio"
               id="switch_nl"
@@ -37,24 +36,33 @@
               value="Nederlands"
               checked
             />
+            <label for="switch_nl">NL</label>
             <input
               type="radio"
               id="switch_eng"
               name="switch_1"
               value="English"
             />
-            <label for="switch_right">ENG</label>
+            <label for="switch_eng">ENG</label>
           </div>
       </form>
       <nav class="nav">
         <a href="index.php">
         <img src="assets/img/logo/Beveren.svg" alt="logo Beveren" height="25px"/>
         </a>
-        <ul>
-          <li><a href="index.php?page=lineup">Lineup</a></li>
-          <li><a href="index.php?page=fallback">Raak betrokken</a></li>
-          <li><a href="index.php?page=fallback">Praktisch</a></li>
-          <li><a href="index.php?page=fallback">Over Ons</a></li>
+        <ul class="menu">
+          <li class="nav-list">
+            <a class="nav-item" href="index.php?page=lineup">Lineup</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-item" href="index.php?page=fallback">Raak betrokken</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-item" href="index.php?page=fallback">Praktisch</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-item" href="index.php?page=fallback">Over Ons</a>
+          </li>
         </ul>
       </nav>
     </header>

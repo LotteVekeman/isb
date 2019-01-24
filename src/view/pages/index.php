@@ -2,7 +2,7 @@
       <header class="pageHeader">
         <h1 class="hidden">International TheaterFestival Beveren</h1>
         <img src="assets/img/headerimg@0,5x.png" alt="kleurrijke krijtexplosie met naam festival" />
-        <div>
+        <div class="infoDiv">
           <dl class="info">
             <dt>13</dt>
             <dd>edities</dd>
@@ -15,8 +15,8 @@
       </header>
 
       <section>
-        <header>
-          <h2>New Names</h2>
+        <header class="nameHeader">
+          <h2 class="newNames">New Names</h2>
           <p>Ontdek hier onze nieuwste artiesten die aanwezig zullen zijn</p>
         </header>
         <ul>
@@ -32,8 +32,6 @@
             </article>
             </a>
           </li>
-
-          <li></li>
         </ul>
         <a class="btn" href="index.php?page=lineup">Ontdek de volledige lineup</a>
       </section>
