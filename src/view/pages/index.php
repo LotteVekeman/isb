@@ -21,11 +21,13 @@
         </header>
         <ul>
           <li>
-            <a href="index.php?page=lineup-detail">
+            <a href="index.php?page=detail">
             <article class="kijker">
-              <p>vrijdag</p>
-              <h3>The Flying Dutchmen(NL)</h3>
-              <p>The Sky Is The Limit</p>
+              <div class="infoGradient">
+                <p>vrijdag</p>
+                <h3>The Flying Dutchmen(NL)</h3>
+                <p>The Sky Is The Limit</p>
+              </div>
               <div class="gradient">
                 <img class="top" src="assets/img/TheSkyIsTheLimit.jpg" alt="" />
               </div>

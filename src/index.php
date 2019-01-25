@@ -9,11 +9,11 @@ $routes = array(
     'action' => 'index'
   ),
   'lineup' => array(
-    'controller' => 'Events',
-    'action' => 'index'
+    'controller' => 'Pages',
+    'action' => 'lineup'
   ),
-  'lineup-detail' => array(
-    'controller' => 'Events',
+  'detail' => array(
+    'controller' => 'Pages',
     'action' => 'detail'
   ),
   'fallback' => array(

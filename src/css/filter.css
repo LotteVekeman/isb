@@ -88,10 +88,6 @@
   color: black;
 
   margin-bottom: 2.4rem;
-
-  &:hover {
-    cursor: pointer;
-  }
 }
 
 .chooseDay input:checked + label {

@@ -119,6 +119,11 @@ main {
   margin-bottom: 3rem;
 }
 
+.infoGradient {
+  position: absolute;
+  z-index: 1;
+}
+
 .btn {
   text-decoration: none;
 
