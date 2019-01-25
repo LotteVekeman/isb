@@ -1,53 +1,9 @@
-/* #Language */
-
-.language {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-
-.chooseLanguage input {
-  position: absolute;
-  clip: rect(0, 0, 0, 0);
-  height: .1rem;
-  width: .1rem;
-  border: 0;
-  overflow: hidden;
-}
-
-.chooseLanguage label {
-  float: left;
-
-  display: inline-block;
-  width: 6rem;
-  color: rgba(0, 0, 0, .6);
-
-  font-size: 1.4rem;
-  text-align: center;
-  padding: .4rem 1.4rem;
-  /* border-top-left-radius: .5rem;
-  border-top-right-radius: .5rem; */
-
-  border-right: solid .1rem black;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #fdf7f7;
-  }
-}
-
-.chooseLanguage input:checked + label {
-  font-weight: bold;
-  color: var(--pink);
-  border-bottom: solid .2rem var(--pink);
-}
-
 /* #Days */
 
 .days {
   /* display: flex; */
-  justify-content: flex-end;
+
+  /* justify-content: flex-end; */
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -147,4 +103,10 @@
 
   color: white;
   font-weight: bold;
+}
+
+.labelMoment {
+  background-color: var(--aqua);
+  border-left: .5rem;
+  padding: 1rem;
 }

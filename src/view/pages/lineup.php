@@ -1,7 +1,7 @@
-    <main class="headerPage">
-      <section>
+   <main >
+      <section class="pageHeader">
         <header>
-          <h1 class="">Lineup</h1>
+          <h1>Lineup</h1>
           <p>Het programma is onderhevig aan (weers)omstandigheden</p>
         </header>
         <form action="index.php?page=lineup" class="days">
@@ -51,7 +51,11 @@
               id="switch_left"
               name="event"
               value="voorstelling"
-              checked
+              <?php
+                if($currentEvent == 'voorstelling'){
+                  echo 'checked';
+                }
+              ?>
             />
             <label for="switch_left">Voorstelling</label>
             <input
@@ -59,10 +63,15 @@
               id="switch_right"
               name="event"
               value="straatattractie"
+              <?php
+                if($currentEvent == 'straatattractie'){
+                  echo 'checked';
+                }
+              ?>
             />
             <label for="switch_right">Straatattractie</label>
           </div>
-         <input type="submit" value="filter"></input>
+         <input class="btn" type="submit" value="filter"></input>
         </form>
       </section>
 
@@ -71,9 +80,9 @@
         <ul>
           <?php foreach($results as $result): ?>
             <li class="result">
-              <a href="index.php?page=lineup-detail&amp;id=<?php echo $result['result']['id'];?>">
+              <a href="index.php?page=detail&amp;id=<?php echo $result['id'];?>">
                 <div>
-                  <p>
+                  <p class="labelMoment">
                     <?php echo $result["time"];?>
                   </p>
                   <h3>
@@ -85,11 +94,12 @@
                   <?php echo $result["name"];?>
                   </p>
                 </div>
-                <div class="gradientAndForm"></div>
-                <img
-                  src="assets/img/<?php echo $result["name"];?>.jpg" width="300px"
-                  alt="Fotot van <?php echo $result["artist"];?>"
-                />
+                <div class="gradient">
+                  <img class="top"
+                    src="assets/img/<?php echo $result["name"];?>.jpg" width="300px"
+                    alt="Foto van <?php echo $result["artist"];?>"
+                  />
+                </div>
               </a>
             </li>
           <?php endforeach; ?>

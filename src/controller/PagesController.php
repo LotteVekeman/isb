@@ -9,7 +9,6 @@ class PagesController extends Controller{
 
   function __construct(){
     $this->filterDAO = new FilterDAO();
-
   }
 
 public function index(){
@@ -32,7 +31,7 @@ public function lineup(){
     $this->set('day', '1');
     $this->set('currentDay', '1');
     $this->set('event', '');
-    $this->set('currentEvent', '');
+    $this->set('currentEvent', 'voorstelling');
    }
   $this->set('results', $results);
 }
@@ -43,18 +42,18 @@ public function fallback(){
 }
 
 public function detail(){
-  $eventDAO  = new EventDAO();
 
-if(!empty($_GET['id'] )) {
-      $event = $eventDAO->selectById($_GET['id']);
-    }
-    if(empty($event)){
-      header('Location: index.php');
-      exit();
-    }
+  if(!empty($_GET['id'])) {
+        $act = $this->filterDAO->selectById($_GET['id']);
+        $this->set('act', $act);
+      }else{
+        header('Location: index.php');
+        exit();
+      }
 
-    $this->set('currentPage','events');
-    $this->set('event', $event);
-}
+      $this->set('currentPage','detail');
+
+  }
+
 
 }

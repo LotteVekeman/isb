@@ -48,20 +48,33 @@
       </form>
       <nav class="nav">
         <a href="index.php">
-        <img src="assets/img/logo/Beveren.svg" alt="logo Beveren" height="25px"/>
+        <img class="logo" src="assets/img/logo/Beveren.svg" alt="logo Beveren" height="25px"/>
         </a>
         <ul class="menu">
-          <li class="nav-list">
-            <a class="nav-item" href="index.php?page=lineup">Lineup</a>
+          <li class="menuItem homeNav">
+            <a class="nav-item" href="index.php">
+              <p class="hide">Home</p>
+            </a>
           </li>
-          <li class="nav-list">
-            <a class="nav-item" href="index.php?page=fallback">Raak betrokken</a>
+          <li class="menuItem lineupNav">
+            <a class="nav-item" href="index.php?page=lineup">
+              <p class="hide">Lineup</p>
+            </a>
           </li>
-          <li class="nav-list">
-            <a class="nav-item" href="index.php?page=fallback">Praktisch</a>
+          <li class="menuItem switchNav">
+            <a class="nav-item" href="index.php?page=fallback">
+              <p class="hide">Raak betrokken</p>
+            </a>
           </li>
-          <li class="nav-list">
-            <a class="nav-item" href="index.php?page=fallback">Over Ons</a>
+          <li class="menuItem prakNav">
+            <a class="nav-item" href="index.php?page=fallback">
+              <p class="hide">Praktisch</p>
+            </a>
+          </li>
+          <li class="menuItem aboutNav">
+            <a class="nav-item" href="index.php?page=fallback">
+              <p class="hide">Over ons</p>
+            </a>
           </li>
         </ul>
       </nav>

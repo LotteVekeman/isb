@@ -14,15 +14,15 @@
         </div>
       </header>
 
-      <section>
+      <section class="kijker">
         <header class="nameHeader">
           <h2 class="newNames">New Names</h2>
-          <p>Ontdek hier onze nieuwste artiesten die aanwezig zullen zijn</p>
+          <p class="namesIntro">Ontdek hier onze nieuwste artiesten die aanwezig zullen zijn</p>
         </header>
-        <ul>
+        <ul class="kijkerList">
           <li>
-            <a href="index.php?page=detail">
-            <article class="kijker">
+            <a class="kijkerLink" href="index.php?page=detail&id=51">
+            <article>
               <div class="infoGradient">
                 <p>vrijdag</p>
                 <h3>The Flying Dutchmen(NL)</h3>
