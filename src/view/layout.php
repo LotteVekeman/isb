@@ -48,7 +48,7 @@
       </form>
       <nav class="nav">
         <a href="index.php">
-        <img class="logo" src="assets/img/logo/Beveren.svg" alt="logo Beveren" height="25px"/>
+        <img class="logo" src="assets/img/logo/Beveren.svg" alt="logo Beveren" height=""/>
         </a>
         <ul class="menu">
           <li class="menuItem homeNav">

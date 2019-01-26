@@ -42,9 +42,9 @@ main {
 /* stylelint-enable */
 
 .pageHeader {
-  margin-top: -3rem;
+  /* margin-top: -3rem; */
   margin-bottom: 10rem;
-  z-index: -1;
+  z-index: auto;
   background-image: linear-gradient(white, var(--light));
 
   /* height: 40rem; */

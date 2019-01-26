@@ -39,8 +39,14 @@
   border-bottom: solid .2rem var(--pink);
 }
 
+.nav {
+  @media (--md) {
+    display: flex;
+  }
+}
+
 .logo {
-  z-index: 2;
+  z-index: 5;
 }
 
 .menu {
@@ -62,11 +68,34 @@
     bottom: 0;
     position: fixed;
   }
+
+  @media (--md) {
+    position: relative;
+    background-color: transparent;
+  }
 }
 
 .hide {
   visibility: hidden;
   height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: -.5rem;
+
+  @media (--md) {
+    visibility: visible;
+    color: black;
+  }
+
+  &:hover {
+    cursor: pointer;
+    font-weight: bold;
+
+    transition: font-weight .2s ease-in-out;
+  }
 }
 
 .nav-list {
@@ -105,6 +134,10 @@
   background-position: center;
 
   padding-bottom: 3rem;
+
+  @media (--md) {
+    visibility: hidden;
+  }
 }
 
 .switchNav {
@@ -112,6 +145,10 @@
   background-repeat: no-repeat;
   grid-area: switch;
   background-position: center;
+
+  @media (--md) {
+    visibility: hidden;
+  }
 }
 
 .prakNav {
@@ -119,6 +156,10 @@
   background-repeat: no-repeat;
   grid-area: prak;
   background-position: center;
+
+  @media (--md) {
+    visibility: hidden;
+  }
 }
 
 .aboutNav {
@@ -127,16 +168,16 @@
   background-repeat: no-repeat;
   grid-area: about;
   background-position: center;
+
+  @media (--md) {
+    visibility: hidden;
+  }
 }
 
 .nav-item {
   color: white;
   text-decoration: none;
-
-  &:hover {
-    cursor: pointer;
-    background-color: black;
-  }
+  text-align: center;
 
   @media (--xs) {
     content: '';
