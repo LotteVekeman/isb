@@ -1,6 +1,3 @@
-  <?php
-    var_dump($act);
-  ?>
 
   <main>
       <header>

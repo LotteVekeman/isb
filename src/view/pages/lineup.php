@@ -2,11 +2,12 @@
       <section class="pageHeader">
         <header>
           <h1>Lineup</h1>
-          <p>Het programma is onderhevig aan (weers)omstandigheden</p>
+          <p class="namesIntro ">Het programma is onderhevig aan (weers)omstandigheden</p>
         </header>
         <form action="index.php?page=lineup" class="days">
           <input type="hidden" name="page" value="lineup" />
           <input type="hidden" name="action" value="filter" />
+          <p class="filter__help">Kies een dag:</p>
           <div class="chooseDay">
             <input
               type="radio"
@@ -45,6 +46,7 @@
             />
             <label for="switch_sunday">zondag</label>
           </div>
+          <p class="filter__help">Kies een soort act:</p>
           <div class="chooseEvent">
             <input
               type="radio"
@@ -71,11 +73,11 @@
             />
             <label for="switch_right">Straatattractie</label>
           </div>
-         <input class="btn" type="submit" value="filter"></input>
+         <input class="filter__btn" type="submit" value="filter"></input>
         </form>
       </section>
 
-      <section>
+      <section class="resultHeader">
         <h2>Resultaten:</h2>
         <ul>
           <?php foreach($results as $result): ?>

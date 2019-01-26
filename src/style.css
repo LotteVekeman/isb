@@ -24,6 +24,7 @@ body {
 
 .header {
   grid-area: header;
+  margin-bottom: 10rem;
 }
 
 main {
@@ -48,6 +49,7 @@ main {
 
 .pageHeader {
   margin-bottom: 10rem;
+  margin-top: -10rem;
   z-index: auto;
   background-image: linear-gradient(white, var(--light));
 
@@ -156,8 +158,8 @@ main {
         rgba(255, 255, 255, 0) 0,
         var(--light) 100%
       );
-    margin-top: -150px;
-    height: 150px;
+    margin-top: -15rem;
+    height: 15rem;
     content: '';
   }
 }

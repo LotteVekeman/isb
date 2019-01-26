@@ -70,20 +70,6 @@
             </article>
             </a>
           </li>
-
-            <!-- <a class="kijkerLink" href="index.php?page=detail&id=48">
-            <article>
-              <div class="infoGradient">
-                <p>vrijdag</p>
-                <h3>Cie Xav To Yilo<sup>FR<sup></h3>
-                <p>Silento</p>
-              </div>
-              <div class="gradient">
-                <img class="top" src="assets/img/Silento.jpg" alt="" />
-              </div>
-            </article>
-            </a>
-          </li> -->
         </ul>
         <a class="btn" href="index.php?page=lineup">Ontdek de volledige lineup</a>
       </section>
