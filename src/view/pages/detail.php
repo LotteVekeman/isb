@@ -32,7 +32,7 @@
             <dd><?php echo $act['country'];?></dd>
 
             <dt><img src="assets/img/icon/globe.svg"" alt="" /></dt></dt>
-            <dd><a href="<?php $act['site'];?>">website</a></dd>
+            <dd><a target="_blank" href="<?php echo $act['site'];?>">website</a></dd>
           </dl>
           <p><?php echo $act['intro'];?></p>
         </section>

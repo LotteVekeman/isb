@@ -141,25 +141,28 @@
           </ul>
         </article>
       </section>
+
       <section class="sponsors">
         <h2 class="hidden">Sponsors</h2>
-        <a target="_blank" href="http://www.winkeldorp.be/">
-          <img src="assets/img/logo/winkeldorp.svg" alt="" />
+        <a class="dorp" target="_blank" href="http://www.winkeldorp.be/">
+          <img src="assets/img/logo/winkeldorp.svg" alt="logo winkeldorp" />
         </a>
-        <a
+        <a class="horeca"
           target="_blank"
-          href="https://www.handelsgids.be/sector/beveren/horeca/"
-        >
-          <img src="assets/img/logo/horeca.svg" alt=""
-        /></a>
-        <a target="_blank" href="http://www.aouteneclats.be/">
-          <img src="assets/img/logo/scouts.svg" alt="" />
+          href="https://www.handelsgids.be/sector/beveren/horeca/">
+          <img src="assets/img/logo/horeca.svg" alt="logo horeca beveren"/>
         </a>
-        <a target="_blank" href="http://www.warandeshopping.be/">
-          <img src="assets/img/logo/warande.svg" alt="" />
+        <a class="eclats"
+          target="_blank" href="http://www.aouteneclats.be/">
+          <img src="assets/img/logo/scouts.svg" alt="logo scouts Sint-Martinus" />
         </a>
-        <a target="_blank" href="http://beverse-feesten.be/">
-          <img class="logo" src="assets/img/logo/beverseFeesten.svg" alt="" />
+        <a class="warande"
+          target="_blank" href="http://www.warandeshopping.be/">
+          <img src="assets/img/logo/warande.svg" alt="logo Warande" />
+        </a>
+        <a class="bf"
+          target="_blank" href="http://beverse-feesten.be/">
+          <img class="logo" src="assets/img/logo/beverseFeesten.svg" alt="logo Beverse Feesten" />
         </a>
       </section>
       <section class="copyright">
