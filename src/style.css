@@ -3,6 +3,7 @@
 @import './css/header.css';
 @import './css/footer.css';
 @import './css/filter.css';
+@import './css/detail.css';
 
 html {
   font-size: 62.5%;

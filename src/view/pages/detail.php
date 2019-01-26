@@ -1,15 +1,23 @@
 
   <main>
-      <header>
-        <a href="index.php?page=lineup">keer terug naar overzicht</a>
-        <h1><?php echo $act['name'];?></h1>
-        <p>door <?php echo $act['artist'];?></p>
+      <header class="detail__header">
+        <a class="back" href="index.php?page=lineup">
+          <p>keer terug naar overzicht</p>
+        </a>
+        <div>
+          <h1><?php echo $act['name'];?></h1>
+          <p>door <?php echo $act['artist'];?></p>
+        </div>
+        <img
+          src="./assets/img/isb/<?php echo $act['day'];?>/<?php echo $act['type'];?>/<?php echo $act["imgpath"];?>.jpg"
+          alt="Foto van <?php echo $act['artist'];?>"
+        />
       </header>
       <div>
-        <section>
+        <section class="">
           <h2 class="hidden">headerinfo</h2>
-          <p>#<?php echo $act['type'];?></p>
-          <dl>
+          <p class="type">#<?php echo $act['type'];?></p>
+          <dl class="detail__info">
             <dt><img src="assets/img/icon/calendar.svg" alt="" /></dt>
             <dd><?php echo $act['day'];?></dd>
 
@@ -20,7 +28,7 @@
 
             <dt><img src="assets/img/icon/location.svg" alt="" /></dt></dt>
             <dd>
-              <a href="<?php $act['link'];?>">
+              <a target="_blank" href="<?php echo $act['link'];?>">
                 <?php echo $act['place'];?>
               </a>
             </dd>
@@ -31,7 +39,7 @@
             <dt><img src="assets/img/icon/globe.svg"" alt="" /></dt></dt>
             <dd><a target="_blank" href="<?php echo $act['site'];?>">website</a></dd>
           </dl>
-          <p><?php echo $act['intro'];?></p>
+          <p class="detail__intro"><?php echo $act['intro'];?></p>
         </section>
         <section>
           <h2>Onze Video's</h2>
