@@ -21,6 +21,10 @@
       <section class="act__detail-info">
         <h2 class="hidden">headerinfo</h2>
         <p class="info-type">#<?php echo $act['type'];?></p>
+        <img class="act__detail-photo2" width="300px"
+            src="./assets/img/isb/<?php echo $act['day'];?>/<?php echo $act['type'];?>/<?php echo $act["imgpath"];?>.jpg"
+            alt="Foto van <?php echo $act['artist'];?>"
+        />
         <dl class="act__detail__infoList">
           <div class="infoList-row detail__info-day">
             <dt class="icon"><img src="assets/img/icon/calendar.png" alt="" /></dt>

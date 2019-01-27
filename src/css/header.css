@@ -63,13 +63,13 @@
   @media (--xs) {
     bottom: 0;
     position: fixed;
+    grid-template-columns: 1% repeat(5, 1fr) 1%;
+    grid-template-areas: '. home lineup switch prak about . ';
   }
 
   @media (--md) {
     position: relative;
     background-color: transparent;
-    grid-template-columns: 1% repeat(5, 1fr) 1%;
-    grid-template-areas: '. home lineup switch prak about . ';
   }
 
   @media (min-width: 78.75em) {
@@ -102,8 +102,8 @@
 
 .nav-list {
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+  justify-content: center;
+  align-items: center;
 }
 
 .menuItem {
@@ -111,7 +111,6 @@
   border-top: solid .25rem transparent;
 
   &:hover {
-    /* background-color: black; */
     border-top: solid .25rem black;
   }
 }

@@ -4,6 +4,10 @@
 
 .act__detail-header {
   margin-bottom: 35rem;
+
+  @media (--md) {
+    margin-bottom: 24rem;
+  }
 }
 
 .back {
@@ -13,6 +17,9 @@
 
 .back-text {
   margin-bottom: 3rem;
+  /* max-width: 19rem; */
+
+  z-index: 3;
 }
 
 .gradient3 {
@@ -35,6 +42,23 @@
     margin-top: -150px;
     height: 150px;
     content: '';
+  }
+
+  @media (--md) {
+    z-index: -2;
+  }
+}
+
+.gradient3::after {
+  @media (--md) {
+    background-image:
+      linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0,
+        var(--purple) 100%
+      );
+
+    margin-top: -30rem;
   }
 }
 
@@ -63,11 +87,20 @@
 
     margin-top: -.5rem;
   }
+
+  @media (--md) {
+    margin-top: -13rem;
+    z-index: -1;
+  }
 }
 
 .detail-nameTitle {
   line-height: 1.5;
   color: var(--aqua);
+
+  @media (--md) {
+    color: var(--pink);
+  }
 }
 
 .detail-nameArtist {
@@ -76,32 +109,67 @@
   color: white;
 }
 
-.act__detail-photoFrame {
-  height: 30rem;
-  overflow: hidden;
+.act__detail-photo {
+  /* object-position: 0 5%; */
+  object-position: center;
+  z-index: -1;
 
-  &::after {
-    background-image:
-      linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0) 0,
-        #97217e 100%
-      );
+  @media (--md) {
+    visibility: hidden;
   }
 }
 
-.act__detail-photo {
-  object-position: 0 5%;
-  z-index: -1;
-}
-
 .act__detail-info {
+  line-height: 1.5;
+
   display: grid;
   grid-gap: 1.5rem;
-  grid-template-columns: 10% 1fr;
-  grid-template-rows: 1% auto;
 
-  line-height: 1.5;
+  @media (--xs) {
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1% auto;
+  }
+
+  @media (min-width: 32em) {
+    grid-template-columns: 10% 30% 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      '. type type '
+      '. infoList intro ';
+  }
+
+  @media (--md) {
+    grid-gap: 3rem;
+    grid-template-columns: 5% 1fr 2fr 1%;
+    grid-template-areas:
+      '. . type .'
+      '. img infoList .'
+      '. img intro .'
+      '. . intro .';
+  }
+
+  @media (--lg) {
+    grid-template-columns: 10% 1fr 2fr 1%;
+  }
+
+  @media (--xl) {
+    grid-template-columns: 20% 1fr 2fr 1%;
+  }
+}
+
+.act__detail-photo2 {
+  @media (--xs) {
+    display: none;
+  }
+
+  @media (--md) {
+    display: inline;
+
+    grid-area: img;
+    filter: grayscale(100%);
+
+    border-radius: 1rem;
+  }
 }
 
 .info-type {
@@ -110,10 +178,24 @@
   z-index: 2;
 
   font-size: 2rem;
+
+  @media (min-width: 43.75em) {
+    grid-area: type;
+    margin-left: 0;
+  }
 }
 
 .act__detail__infoList {
   margin-top: 2rem;
+
+  @media (min-width: 43.75em) {
+    grid-area: infoList;
+    margin-left: -2rem;
+  }
+
+  @media (--md) {
+    margin-left: 0;
+  }
 }
 
 .infoList-row {
@@ -129,79 +211,42 @@
 
 .detail__info-intro {
   margin-left: 1rem;
-  width: 95vw;
+
+  @media (min-width: 43.75em) {
+    margin-left: 0;
+    grid-area: intro;
+    margin-top: 2rem;
+  }
+
+  @media (--md) {
+    margin-top: 0;
+  }
+
+  @media (min-width: 69em) {
+    width: 50vw;
+  }
+
+  @media (min-width: 82em) {
+    width: 40vw;
+  }
 }
 
 .act__detail-others {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  @media (--xs) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-/* .act__detail {
-  display: grid;
+  @media (--md) {
+    width: 50vw;
+  }
 
-  @media (--sm) {
-    grid-gap: 1.5rem;
-    grid-template-columns: 1% 1fr;
-    grid-template-rows: 1% 50rem auto;
-    grid-template-areas:
-      '. back'
-      'photo photo'
-      '. detail'
-      '. type'
-      '. day'
-      '. hour'
-      '. location'
-      '. country'
-      '. site'
-      'text text';
+  @media (min-width: 82em) {
+    width: 43vw;
+  }
+
+  @media (--xl) {
+    width: 60vw;
   }
 }
-
-.back {
-  margin: -5rem;
-  grid-area: back;
-  color: black;
-  transition: transform .3s ease-in-out;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-}
-
-.act__detail-name {
-  grid-area: detail;
-}
-
-.act__detail-photo {
-  grid-area: photo;
-}
-
-.act__detail-header {
-  margin-top: -5rem;
-}
-
-.detail__info-time {
-  grid-area: hour;
-}
-
-.detail__info-location {
-  grid-area: location;
-}
-
-.detail__info-country {
-  grid-area: country;
-}
-
-.detail__info-site {
-  grid-area: site;
-}
-
-.detail__info-intro {
-  grid-area: text;
-}
-
-.type {
-  font-size: 2rem;
-} */

@@ -7,7 +7,7 @@
         <form action="index.php?page=lineup" class="days">
           <input type="hidden" name="page" value="lineup" />
           <input type="hidden" name="action" value="filter" />
-          <p class="filter__help">Kies een dag:</p>
+          <p class="filter__label">Kies een dag:</p>
           <div class="chooseDay">
             <input
               type="radio"
@@ -20,7 +20,9 @@
                 }
               ?>
             />
-            <label class="fiday" for="switch_friday">vrijdag</label>
+            <label class="filter__input-fri" for="switch_friday">
+              <p class="inputHide">vrijdag</p>
+            </label>
             <input
               type="radio"
               id="switch_saturday"
@@ -32,7 +34,7 @@
                 }
               ?>
             />
-            <label for="switch_saturday">zaterdag</label>
+            <label class="filter__input-sat" for="switch_saturday"><p class="inputHide">zaterdag</p></label>
             <input
               type="radio"
               id="switch_sunday"
@@ -44,9 +46,9 @@
                 }
               ?>
             />
-            <label for="switch_sunday">zondag</label>
+            <label class="filter__input-sun" for="switch_sunday"><p class="inputHide">zondag</p></label>
           </div>
-          <p class="filter__help">Kies een soort act:</p>
+          <p class="filter__label">Kies een soort act:</p>
           <div class="chooseEvent">
             <input
               type="radio"
@@ -59,7 +61,7 @@
                 }
               ?>
             />
-            <label for="switch_left">Voorstelling</label>
+            <label class="filter__input-per" for="switch_left">Voorstelling</label>
             <input
               type="radio"
               id="switch_right"
@@ -71,7 +73,7 @@
                 }
               ?>
             />
-            <label for="switch_right">Straatattractie</label>
+            <label class="filter__input-street" for="switch_right">Straatattractie</label>
           </div>
          <input class="filter__btn" type="submit" value="filter"></input>
         </form>
@@ -79,9 +81,8 @@
 
       <section class="resultHeader">
         <h2>Resultaten:</h2>
-        <ul>
+        <ul class="filter__result-list">
           <?php foreach($results as $result): ?>
-
             <li class="item">
               <a href="index.php?page=detail&amp;id=<?php echo $result['id'];?>">
               <article>
