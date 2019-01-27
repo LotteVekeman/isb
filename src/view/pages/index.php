@@ -1,7 +1,63 @@
 <main class="mainGrid">
       <header class="pageHeader">
         <h1 class="hidden">International TheaterFestival Beveren</h1>
-        <img src="assets/img/headerimg@0,5x.png" alt="kleurrijke krijtexplosie met naam festival" />
+        <picture class="pageHeader-image">
+            <source
+              type="image/webp"
+              media="(min-width: 1104px)"
+              srcset="assets/img/headerimg@1,15x.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 1024px)"
+              srcset="assets/img/headerimg.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="assets/img/headerimg@0,75x.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 320px)"
+              srcset="assets/img/headerimg@0,5x.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 0px)"
+              srcset="assets/img/headerimg@0,33x.webp 1x"
+            />
+
+            <source
+              type="image/png"
+              media="(min-width: 1104px)"
+              srcset="assets/img/headerimg@1,15x.png 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 1024px)"
+              srcset="assets/img/headerimg.webp 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 768px)"
+              srcset="assets/img/headerimg@0,75x.png 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 320px)"
+              srcset="assets/img/headerimg@0,5x.png 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 0px)"
+              srcset="assets/img/headerimg@0,33x.png 1x"
+            />
+          <img src="assets/img/headerimg@0,5x.png" alt="kleurrijke krijtexplosie met naam festival" />
+        </picture>
+
+
+
         <div class="infoDiv">
           <dl class="info">
             <dt>13</dt>
@@ -31,7 +87,7 @@
                 </div>
               </div>
               <div class="gradient">
-                <img class="top" src="assets/img/TheSkyIsTheLimit.jpg" alt="foto van The Flying Dutchmen" />
+                <img class="top" src="assets/img/isb/vrijdag/voorstelling/004-the-flying-dutchmen.jpg" alt="foto van The Flying Dutchmen" />
               </div>
             </article>
             </a>
@@ -48,7 +104,7 @@
                 </div>
               </div>
               <div class="gradient">
-                <img class="top" src="assets/img/sittingDuckChiringuito.jpg" alt="foto van Sie Sitting Duck" />
+                <img class="top" src="assets/img/isb/vrijdag/voorstelling/005-sitting-duck-chiringuito-paradise.jpg" alt="foto van Sie Sitting Duck" />
               </div>
             </article>
             </a>
@@ -65,7 +121,7 @@
                 </div>
               </div>
               <div class="gradient">
-                <img class="top" src="assets/img/Silento.jpg" alt="foto van Cie Xav To Yilo" />
+                <img class="top" src="assets/img/isb/vrijdag/voorstelling/006-xav-to-yilo-silento.jpg" alt="foto van Cie Xav To Yilo" />
               </div>
             </article>
             </a>

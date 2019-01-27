@@ -76,6 +76,16 @@ main {
   }
 }
 
+.pageHeader-image {
+  @media (--md) {
+    margin-top: -3rem;
+  }
+
+  @media (--lg) {
+    margin-top: -5rem;
+  }
+}
+
 .nameHeader {
   width: 80%;
 

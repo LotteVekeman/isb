@@ -32,7 +32,7 @@
             <input
               type="radio"
               id="switch_nl"
-              name="switch_1"
+              name="switch_nl"
               value="Nederlands"
               checked
             />
@@ -40,7 +40,7 @@
             <input
               type="radio"
               id="switch_eng"
-              name="switch_1"
+              name="switch_eng"
               value="English"
             />
             <label for="switch_eng">ENG</label>
