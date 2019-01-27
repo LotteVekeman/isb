@@ -1,6 +1,8 @@
+
+
    <main >
       <section class="pageHeader">
-        <header>
+        <header class="lineup__header">
           <h1>Lineup</h1>
           <p class="namesIntro ">Het programma is onderhevig aan (weers)omstandigheden</p>
         </header>
@@ -88,7 +90,15 @@
                 <div class="infoGradient">
                   <p class="dayLabel"><?php echo $result['time'];?></p>
                   <div class="textLabel">
-                    <h3><?php echo $result['artist'];?><sup> <?php echo $result['short'];?> </sup></h3>
+                    <h3>
+                      <?php
+                      echo $result['artist'];?>
+                      <sup>
+                    <?php if($result['artist']!== ''){
+                      echo $result['short'];
+                    }?>
+
+                    </h3>
                     <p class="textLabel__name"><?php echo $result['name'];?></p>
                   </div>
                 </div>

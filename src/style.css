@@ -111,7 +111,6 @@ main {
 }
 
 .gradient {
-  max-width: 100%;
   width: 25rem;
   height: 25rem;
 
@@ -129,7 +128,7 @@ main {
       linear-gradient(
         to bottom,
         rgba(255, 255, 255, 0) 0,
-        #97217e 100%
+        var(--pink) 100%
       );
     margin-top: -150px;
     height: 150px;
@@ -177,8 +176,23 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
-  width: 90%;
+.memory__video {
+  border: solid .1rem var(--pink);
+  border-radius: 1rem;
+
+  @media (--sm) {
+    width: 100%;
+  }
+
+  @media (--md) {
+    width: 90%;
+  }
+
+  @media (--lg) {
+    width: 50%;
+  }
 }
 
 .slider {
@@ -282,14 +296,6 @@ sup {
   height: 100%;
 }
 
-.previous {
-  filter: brightness(90%);
-
-  &:hover {
-    filter: brightness(100%);
-  }
-}
-
 .infoDiv {
   margin-top: -6.5rem;
   margin-bottom: 3rem;
@@ -351,4 +357,53 @@ h3 {
   color: white;
 
   margin-bottom: .5rem;
+}
+
+.lineup__header {
+  margin-left: 1rem;
+}
+
+.pageHeader2 {
+  padding-bottom: 10rem;
+  margin-top: -3rem;
+  z-index: auto;
+  background-image: linear-gradient(white, var(--light));
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__name {
+  margin-bottom: 2.4rem;
+  margin-left: 1rem;
+
+  @media (--sm) {
+    width: 95vw;
+  }
+}
+
+.error__comment {
+  margin-bottom: 3rem;
+
+  @media (--sm) {
+    width: 95vw;
+  }
+}
+
+.btn2 {
+  text-decoration: none;
+  border: none;
+  padding: 1rem;
+  background-color: var(--light);
+  color: black;
+
+  border-radius: 1rem;
+
+  &:hover {
+    background-color: var(--aqua);
+  }
 }

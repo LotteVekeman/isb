@@ -115,7 +115,7 @@
 }
 
 .homeNav {
-  background-image: url(../assets/img/icon/home.svg);
+  background-image: url(../assets/img/icon/home.png);
   background-repeat: no-repeat;
   grid-area: home;
   background-position: center;
@@ -186,5 +186,23 @@
 
   @media (--md) {
     display: inline;
+  }
+}
+
+.current {
+  @media (--xs) {
+    /* background-color: var(--aqua); */
+    border-top: solid .2rem white;
+  }
+
+  @media (--md) {
+    font-weight: bold;
+    border-bottom: solid .1rem var(--pink);
+  }
+}
+
+.notCurrent {
+  @media (--xs) {
+    filter: grayscale(80%);
   }
 }

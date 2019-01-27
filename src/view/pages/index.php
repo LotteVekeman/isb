@@ -79,11 +79,10 @@
           <h2>Trip Down Memory Lane</h2>
           <p class="namesIntro">Hieronder zijn is het promofilmpje van vorig jaar te zien</p>
         </header>
-        <div class="">
-          <a class="previous" target= "_blank" href="https://www.youtube.com/channel/UCyLydUlLUg_pBIAaWOKwkxQ">
-            <img class="edition" src="assets/img/previousEdition@0,5x.jpg" alt="" />
-          </a>
-        </div>
+        <iframe class="memory__video" height="300"
+          src="https://www.youtube.com/embed/lrlscBtuSUM"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
 
       </section>
 

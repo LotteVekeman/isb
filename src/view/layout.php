@@ -48,31 +48,72 @@
       </form>
       <nav class="nav">
         <a href="index.php">
-        <img class="logo" src="assets/img/logo/Beveren.svg" alt="logo Beveren" height="35px"/>
+        <img class="logo" src="assets/img/logo/logo.png" alt="logo Beveren" height="35px"/>
         </a>
         <ul class="menu">
-          <li class="menuItem homeNav">
+          <li class="menuItem homeNav <?php
+                if($currentPage == 'home'){
+                  echo 'current';
+                }else{
+                  echo 'notCurrent';
+                }
+              ?>">
             <a class="nav-item" href="index.php">
               <p class="hide">Home</p>
             </a>
           </li>
-          <li class="menuItem lineupNav">
-            <a class="nav-item" href="index.php?page=lineup">
-              <p class="hide">Lineup</p>
+          <li class="menuItem lineupNav <?php
+                if($currentPage == 'lineup'){
+                  echo 'current';
+                }else{
+                  echo 'notCurrent';
+                }
+              ?>">
+            <a class="nav-item" href="
+              <?php if($currentPage == 'lineup'){
+                  echo '#';
+                }else{
+                  echo 'index.php?page=lineup';
+                }
+              ?>
+            ">
+              <p class="hide <?php
+                if($currentPage == 'lineup'){
+                  echo 'current';
+                }else{
+                  echo 'notCurrent';
+                }
+              ?>">Lineup</p>
             </a>
           </li>
           <li class="menuItem switchNav">
-            <a class="nav-item" href="index.php?page=fallback">
+            <a class="nav-item" href="
+            <?php if($currentPage == 'fallback'){
+                  echo '#';
+                }else{
+                  echo 'index.php?page=fallback';
+                }
+              ?>">
               <p class="hide">Raak betrokken</p>
             </a>
           </li>
           <li class="menuItem prakNav">
-            <a class="nav-item" href="index.php?page=fallback">
+            <a class="nav-item" href=" <?php if($currentPage == 'fallback'){
+                  echo '#';
+                }else{
+                  echo 'index.php?page=fallback';
+                }
+              ?>">
               <p class="hide">Praktisch</p>
             </a>
           </li>
           <li class="menuItem aboutNav">
-            <a class="nav-item" href="index.php?page=fallback">
+            <a class="nav-item" href=" <?php if($currentPage == 'fallback'){
+                  echo '#';
+                }else{
+                  echo 'index.php?page=fallback';
+                }
+              ?>">
               <p class="hide">Over ons</p>
             </a>
           </li>
