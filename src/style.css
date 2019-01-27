@@ -78,6 +78,14 @@ main {
 
 .nameHeader {
   width: 80%;
+
+  @media (min-width: 69em) {
+    width: 70%;
+  }
+
+  @media (min-width: 82em) {
+    width: 60%;
+  }
 }
 
 .newNames {
@@ -178,6 +186,50 @@ main {
   justify-content: center;
 }
 
+.kijkerList {
+  @media (--md) {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      'one two'
+      'three three';
+  }
+
+  @media (--lg) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 'one two three';
+  }
+}
+
+.kijkerLink {
+  width: 20rem;
+}
+
+.first {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+
+  @media (--md) {
+    margin-top: -3rem;
+    margin-left: 13rem;
+  }
+
+  @media (--lg) {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
+
 .memory__video {
   border: solid .1rem var(--pink);
   border-radius: 1rem;
@@ -197,25 +249,45 @@ main {
 
 .slider {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5rem;
+  grid-template-columns: .1% repeat(4, 25rem);
+  grid-gap: 1.5rem;
   overflow: scroll;
+
+  grid-template-areas: '. olympic eve crazy market';
 
   margin-left: 20rem;
   margin-right: 20rem;
 
   width: 100vw;
   height: 100%;
+
+  @media (--lg) {
+    justify-content: center;
+  }
 }
 
 .item {
   margin-bottom: 3rem;
-  /*margin-left: 3rem;
-  margin-left: -1rem; */
 
   &:hover {
     filter: grayscale(100%);
   }
+}
+
+.olympic {
+  grid-area: olympic;
+}
+
+.eve {
+  grid-area: eve;
+}
+
+.crazy {
+  grid-area: crazy;
+}
+
+.market {
+  grid-area: market;
 }
 
 .infoGradient {

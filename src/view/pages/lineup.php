@@ -1,5 +1,3 @@
-
-
    <main >
       <section class="pageHeader">
         <header class="lineup__header">
@@ -94,10 +92,10 @@
                       <?php
                       echo $result['artist'];?>
                       <sup>
-                    <?php if($result['artist']!== ''){
-                      echo $result['short'];
-                    }?>
-
+                        <?php if($result['artist']!== ''){
+                          echo $result['short'];
+                        }?>
+                      </sup>
                     </h3>
                     <p class="textLabel__name"><?php echo $result['name'];?></p>
                   </div>

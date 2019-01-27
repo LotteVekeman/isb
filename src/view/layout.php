@@ -126,7 +126,7 @@
     <footer>
       <section class="summary">
         <h2 class="hidden">Summary site</h2>
-        <article>
+        <article class="footer__summary-festival">
           <h3>Festival</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=lineup">Lineup</a></li>
@@ -134,21 +134,21 @@
             <li class="footerLink">Andere activiteiten</li>
           </ul>
         </article>
-        <article>
+        <article class="footer__summary-switch">
           <h3>Raak betrokken</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=fallback">Word vrijwilliger</a></li>
             <li><a  class="footerLink" href="index.php?page=fallback">Zelf Optreden</a></li>
           </ul>
         </article>
-        <article>
+        <article class="footer__summary-about">
           <h3>Over</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=fallback">Geschiedenis</a></li>
             <li><a class="footerLink" href="index.php?page=fallback">Vorige edities</a></li>
           </ul>
         </article>
-        <article>
+        <article class="footer__summary-practical">
           <h3>Praktisch</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=fallback">Slecht weer</a></li>
@@ -156,7 +156,7 @@
             <li><a class="footerLink" href="index.php?page=fallback">Contactgegevens</a></li>
           </ul>
         </article>
-        <article>
+        <article class="footer__summary-media">
           <h3>Volg ons</h3>
           <ul class="smedia">
             <li>

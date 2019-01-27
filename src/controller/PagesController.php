@@ -53,7 +53,7 @@ public function detail(){
 
       $this->set('currentPage','detail');
 
+      $other = $this->filterDAO->selectOthersById($_GET['id']);
+      $this->set('other', $other);
   }
-
-
 }

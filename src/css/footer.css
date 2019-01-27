@@ -11,13 +11,59 @@ footer {
 
 .summary {
   display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(2, 1fr);
 
-  margin-bottom: 3rem;
+  justify-content: center;
 
-  article {
-    margin-bottom: 2.4rem;
+  @media (--sm) {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      'festival switch'
+      'about practical'
+      'media .';
+  }
+
+  @media (--md) {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      'festival switch practical'
+      'about media .';
+  }
+
+  @media (--lg) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 'festival switch practical about media';
+  }
+}
+
+.footer__summary-festival {
+  grid-area: festival;
+  padding: 2rem;
+}
+
+.footer__summary-switch {
+  grid-area: switch;
+  padding: 2rem;
+}
+
+.footer__summary-about {
+  grid-area: about;
+  padding: 2rem;
+}
+
+.footer__summary-practical {
+  grid-area: practical;
+  padding: 2rem;
+}
+
+.footer__summary-media {
+  grid-area: media;
+  padding-left: 2rem;
+
+  @media (--lg) {
+    padding-top: 2rem;
   }
 }
 
@@ -48,6 +94,8 @@ footer {
   padding-top: 2rem;
   text-align: center;
 
+  justify-content: center;
+
   width: 100%;
 
   @media (--sm) {
@@ -59,6 +107,20 @@ footer {
       'dorp horeca'
       'eclats warande'
       'bf bf';
+  }
+
+  @media (--md) {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 'dorp horeca eclats warande bf';
+
+    padding-bottom: 3rem;
+  }
+
+  @media (--lg) {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 10% repeat(5, 1fr) 10%;
+    grid-template-areas: '. dorp horeca eclats warande bf .';
   }
 }
 
@@ -72,6 +134,10 @@ footer {
 
 .eclats {
   grid-area: eclats;
+}
+
+.warande {
+  grid-area: warande;
 }
 
 .bf {

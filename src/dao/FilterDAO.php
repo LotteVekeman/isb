@@ -52,4 +52,22 @@ class FilterDAO extends DAO {
     $stmt->execute();
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
+
+  public function selectOthersById($id){
+    $sql = "SELECT events .*, moments.location_id, moments.time, days.day,
+    locations.place, locations.link, days.id as day_id, moments.event_id
+    FROM events
+    INNER JOIN moments
+    ON events.id = moments.event_id
+    INNER JOIN days
+    ON moments.day_id = days.id
+    INNER JOIN locations
+    ON moments.location_id = locations.id
+    WHERE events.id != :id";
+
+    $stmt = $this->pdo->prepare($sql);
+    $stmt->bindValue(':id', $id);
+    $stmt->execute();
+    return $stmt->fetch(PDO::FETCH_ASSOC);
+  }
 }

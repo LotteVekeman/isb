@@ -52,36 +52,36 @@
         <p class="detail__info-intro"><?php echo $act['intro'];?></p>
       </section>
 
-      <section>
-        <h2>Onze Video's</h2>
-        <div>
-          <a href="<?php $act['videopath'];?>"></a>
-
-        </div>
-      </section>
-
-      <section>
-        <h2>Onze Foto's</h2>
-        <?php if($act['imgpath'] !== ''){
-          echo "Er zijn geen foto's beschikbaar";
-        }else{
-            echo '<div>
-            <ul>
-              <li><img src="" alt=""></li>
-              <li><img src="" alt=""></li>
-              <li><img src="" alt=""></li>
-              <li><img src="" alt=""></li>
-            </ul>
-          </div>'
-          ;};?>
-      </section>
-
-      <section>
-          <h2>Ook op deze dag</h2>
+      <section class="act__detail-others">
+          <h2>Moet je gezien hebben</h2>
           <ul>
-            <li><a href=""></a>Cie Xav To Yilo</li>
-            <li><a href=""></a>Cie Sitting Duck</li>
-            <li><a href=""></a>Krijmfresj</li>
+            <li class="item">
+              <a class="kijkerLink' href="index.php?page=detail&amp;id=<?php echo $other['id'];?>">
+              <article>
+                <div class="infoGradient">
+                  <p class="dayLabel"><?php echo $other['time'];?></p>
+                  <div class="textLabel">
+                    <h3>
+                      <?php
+                      echo $other['artist'];?>
+                      <sup>
+                        <?php if($other['artist']!== ''){
+                          echo $other['short'];
+                        }?>
+                      </sup>
+                    </h3>
+                    <p class="textLabel__name"><?php echo $other['name'];?></p>
+                  </div>
+                </div>
+
+                <div class="gradient">
+                  <img class="top"
+                      src="./assets/img/isb/<?php echo $other['day'];?>/<?php echo $other['type'];?>/<?php echo $other["imgpath"];?>.jpg" width="300px"
+                      alt="Foto van <?php echo $other['artist'];?>"/>
+                </div>
+              </article>
+              </a>
+            </li>
           </ul>
       </section>
 

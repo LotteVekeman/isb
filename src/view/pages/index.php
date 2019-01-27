@@ -20,7 +20,7 @@
           <p class="namesIntro">Ontdek hier onze nieuwste artiesten die aanwezig zullen zijn</p>
         </header>
         <ul class="kijkerList">
-          <li class="item">
+          <li class="item first">
             <a class="kijkerLink" href="index.php?page=detail&id=51">
             <article>
               <div class="infoGradient">
@@ -37,7 +37,7 @@
             </a>
           </li>
 
-          <li class="item">
+          <li class="item two">
             <a class="kijkerLink" href="index.php?page=detail&id=49">
             <article>
               <div class="infoGradient">
@@ -54,7 +54,7 @@
             </a>
           </li>
 
-          <li class="item">
+          <li class="item three">
             <a class="kijkerLink" href="index.php?page=detail&id=48">
             <article>
               <div class="infoGradient">
@@ -93,13 +93,10 @@
             Tijdens de Beverse Feesten vinden nog andere evenementen plaats.
             Ontdek ze hieronder:
           </p>
-          <p>
-            swipe ->
-          </p>
         </header>
 
         <ul class="slider">
-          <li class="item">
+          <li class="item olympic">
             <a target="_blank" href="https://www.beveren.be/olympischestraat">
               <article>
                 <div class="infoGradient">
@@ -110,21 +107,21 @@
               </article>
             </a>
           </li>
-          <li class="item">
+          <li class="item eve">
             <a href="index.php?page=fallback">
             <div class="gradient2">
               <img class="top" src="assets/img/andereActiviteiten/avondmarkt.jpg" alt="veel mensen aan kraampjes" />
             </div>
             </a>
           </li>
-          <li class="item">
+          <li class="item crazy">
             <a href="index.php?page=detail&id=2">
               <div class="gradient2">
                 <img class="top" src="assets/img/andereActiviteiten/gekkefietsencircuit.jpg" alt="scouts bij een parcours" />
               </div>
             </a>
           </li>
-          <li class="item">
+          <li class="item market">
             <a href="index.php?page=fallback">
                 <div class="gradient2">
                   <img class="top" src="assets/img/andereActiviteiten/rommelmarkt.jpg" alt="mensen op een rommelmarkt" />
