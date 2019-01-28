@@ -47,6 +47,16 @@
 
 .logo {
   z-index: 5;
+
+  @media (--lg) {
+    display: flex;
+    justify-content: center;
+    margin-left: 7rem;
+  }
+
+  /* @media(min-width: 85em){
+    mar
+  } */
 }
 
 .menu {

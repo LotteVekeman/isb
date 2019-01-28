@@ -7,7 +7,8 @@ module.exports = (env, {mode}) => {
   console.log(mode);
   return {
     output: {
-      filename: 'script.js'
+      // filename: 'script.js'
+      filename: 'script.[hash].js'
     },
     devServer: {
       overlay: true,
@@ -25,9 +26,9 @@ module.exports = (env, {mode}) => {
         {
           test: /\.(jpe?g|png|svg|webp)$/,
           use: {
-            loader: 'file-loader',
+            loader: 'url-loader',
             options: {
-              // limit: 1,
+              limit: 1000,
               context: './src',
               name: '[path][name].[ext]'
             }
@@ -57,7 +58,7 @@ module.exports = (env, {mode}) => {
     },
     plugins: [
       new MiniCssExtractPlugin({
-        filename: 'style.css'
+        filename: 'style.[hash].css'
       }),
       new OptimizeCSSAssetsPlugin(),
       new webpack.HotModuleReplacementPlugin()

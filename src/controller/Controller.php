@@ -14,21 +14,24 @@ class Controller {
   }
 
   public function render() {
-     $this->set('js', '<script src="http://localhost:8080/script.js"></script>');
-     $this->set('css', '');
-     if ($this->env == 'production') {
-       $this->set('js', '<script src="script.js"></script>');
-       $this->set('css', '<link href="style.css" rel="stylesheet">');
-     }
-
-     $this->createViewVarWithContent();
-     $this->renderInLayout();
-     if (!empty($_SESSION['info'])) {
-       unset($_SESSION['info']);
-     }
-     if (!empty($_SESSION['error'])) {
-       unset($_SESSION['error']);
-     }
+    // load javascript through webpack-dev-server (not MAMP!)
+    $this->set('js', '<script src="http://localhost:8080/script.js"></script>');
+    // webpack dev server: css is injected by the script
+    $this->set('css', '');
+    if ($this->env == 'production') {
+      // regular script in production
+      $this->set('js', '<script src="script.js"></script>');
+       // regular css in production
+      $this->set('css', '<link href="style.css" rel="stylesheet">');
+    }
+    $this->createViewVarWithContent();
+    $this->renderInLayout();
+    if (!empty($_SESSION['info'])) {
+      unset($_SESSION['info']);
+    }
+    if (!empty($_SESSION['error'])) {
+      unset($_SESSION['error']);
+    }
   }
 
   public function set($variableName, $value) {
