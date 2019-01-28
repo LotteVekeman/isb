@@ -1,14 +1,14 @@
-   <main >
+   <main role="overzichtpagina">
       <section class="pageHeader">
         <header class="lineup__header">
           <h1>Lineup</h1>
           <p class="namesIntro ">Het programma is onderhevig aan (weers)omstandigheden</p>
         </header>
-        <form action="index.php?page=lineup" class="days">
+        <form role="form" action="index.php?page=lineup" class="days">
           <input type="hidden" name="page" value="lineup" />
           <input type="hidden" name="action" value="filter" />
           <p class="filter__label">Kies een dag:</p>
-          <div class="chooseDay">
+          <div role="kies dag" aria-current="vrijdag" class="chooseDay">
             <input
               type="radio"
               id="switch_friday"
@@ -23,7 +23,7 @@
             <label class="filter__input-fri" for="switch_friday">
               <p class="inputHide">vrijdag</p>
             </label>
-            <input
+            <input role="keuze zaterdag"
               type="radio"
               id="switch_saturday"
               name="day"
@@ -35,7 +35,7 @@
               ?>
             />
             <label class="filter__input-sat" for="switch_saturday"><p class="inputHide">zaterdag</p></label>
-            <input
+            <input role="keuze zondag"
               type="radio"
               id="switch_sunday"
               name="day"
@@ -48,9 +48,9 @@
             />
             <label class="filter__input-sun" for="switch_sunday"><p class="inputHide">zondag</p></label>
           </div>
-          <p class="filter__label">Kies een soort act:</p>
+          <p role="kies event" aria-current="voorstelling" class="filter__label">Kies een soort act:</p>
           <div class="chooseEvent">
-            <input
+            <input role="keuze voorstelling"
               type="radio"
               id="switch_left"
               name="event"
@@ -62,7 +62,7 @@
               ?>
             />
             <label class="filter__input-per" for="switch_left">Voorstelling</label>
-            <input
+            <input role="keuze straatattractie"
               type="radio"
               id="switch_right"
               name="event"
@@ -75,12 +75,12 @@
             />
             <label class="filter__input-street" for="switch_right">Straatattractie</label>
           </div>
-         <input class="filter__btn" type="submit" value="filter"></input>
+         <input role="button filter" class="filter__btn" type="submit" value="filter"></input>
         </form>
       </section>
 
-      <section class="resultHeader">
-        <h2>Resultaten:</h2>
+      <section role="results"class="resultHeader">
+        <h2><?php echo count($results);?> Resultaten</h2>
         <ul class="filter__result-list">
           <?php foreach($results as $result): ?>
             <li class="item">

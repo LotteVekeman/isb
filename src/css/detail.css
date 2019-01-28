@@ -192,10 +192,12 @@
 }
 
 .act__detail__infoList {
-  margin-top: 2rem;
+  @media (--xs) {
+    grid-area: infoList;
+    margin-top: -3rem;
+  }
 
   @media (min-width: 43.75em) {
-    grid-area: infoList;
     margin-left: -2rem;
   }
 
@@ -218,10 +220,16 @@
 .detail__info-intro {
   margin-left: 1rem;
 
+  @media (--xs) {
+    grid-area: intro;
+    margin-top: 25rem;
+    margin-left: -3rem;
+  }
+
   @media (min-width: 43.75em) {
     margin-left: 0;
-    grid-area: intro;
-    margin-top: 2rem;
+    margin-top: 0;
+    margin-right: 2.5rem;
   }
 
   @media (--md) {
@@ -255,4 +263,8 @@
   @media (--xl) {
     width: 60vw;
   }
+}
+
+.highlight {
+  background-image: linear-gradient(white 55%, #d2b8db 15%);
 }

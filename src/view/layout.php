@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ISB</title>
     <?php echo $css;?>
-    <link rel="icon" href="assets/img/logo/Beveren.svg" />
+    <link rel="icon" href="assets/img/icon.png" />
     <script>
       WebFontConfig = {
         custom: {
@@ -27,8 +27,8 @@
   </head>
   <body>
     <header class="header">
-      <form action="index.php" class="language">
-          <div class="chooseLanguage">
+      <form role="kies taal" action="index.php" class="language">
+          <div role="kies nederlands" aria="nu nederland" class="chooseLanguage">
             <input
               type="radio"
               id="switch_nl"
@@ -46,12 +46,12 @@
             <label for="switch_eng">ENG</label>
           </div>
       </form>
-      <nav class="nav">
+      <nav class="nav" role="navigatie">
         <a href="index.php">
-        <img class="logo" src="assets/img/logo/logo.png" alt="logo Beveren" height="35px"/>
+        <img class="logo" src="assets/img/logo/logo.jpg" alt="logo Beveren" height="35px"/>
         </a>
         <ul class="menu">
-          <li class="menuItem homeNav <?php
+          <li role="navigatie item" class="menuItem homeNav <?php
                 if($currentPage == 'home'){
                   echo 'current';
                 }else{
@@ -62,7 +62,7 @@
               <p class="hide">Home</p>
             </a>
           </li>
-          <li class="menuItem lineupNav <?php
+          <li role="navigatie item" class="menuItem lineupNav <?php
                 if($currentPage == 'lineup'){
                   echo 'current';
                 }else{
@@ -86,7 +86,7 @@
               ?>">Lineup</p>
             </a>
           </li>
-          <li class="menuItem switchNav">
+          <li role="navigatie item" class="menuItem switchNav">
             <a class="nav-item" href="
             <?php if($currentPage == 'fallback'){
                   echo '#';
@@ -97,7 +97,7 @@
               <p class="hide">Raak betrokken</p>
             </a>
           </li>
-          <li class="menuItem prakNav">
+          <li role="navigatie item" class="menuItem prakNav">
             <a class="nav-item" href=" <?php if($currentPage == 'fallback'){
                   echo '#';
                 }else{
@@ -107,7 +107,7 @@
               <p class="hide">Praktisch</p>
             </a>
           </li>
-          <li class="menuItem aboutNav">
+          <li role="navigatie item" class="menuItem aboutNav">
             <a class="nav-item" href=" <?php if($currentPage == 'fallback'){
                   echo '#';
                 }else{
@@ -124,10 +124,10 @@
      <?php echo $content;?>
 
     <footer>
-      <section class="summary">
+      <section role="footer" class="summary">
         <h2 class="hidden">Summary site</h2>
         <article class="footer__summary-festival">
-          <h3>Festival</h3>
+          <h3 role="info over festival">Festival</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=lineup">Lineup</a></li>
             <li><a class="footerLink" href="http://beverse-feesten.be/"> Beverse Feesten</a></li>
@@ -135,21 +135,21 @@
           </ul>
         </article>
         <article class="footer__summary-switch">
-          <h3>Raak betrokken</h3>
+          <h3 role="raak betrokken bij festival">Raak betrokken</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=fallback">Word vrijwilliger</a></li>
             <li><a  class="footerLink" href="index.php?page=fallback">Zelf Optreden</a></li>
           </ul>
         </article>
         <article class="footer__summary-about">
-          <h3>Over</h3>
+          <h3 class="meer info over festival">Over</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=fallback">Geschiedenis</a></li>
             <li><a class="footerLink" href="index.php?page=fallback">Vorige edities</a></li>
           </ul>
         </article>
         <article class="footer__summary-practical">
-          <h3>Praktisch</h3>
+          <h3 role="praktische info festival">Praktisch</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=fallback">Slecht weer</a></li>
             <li><a class="footerLink" href="index.php?page=fallback">Bereikbaarheid</a></li>
@@ -157,27 +157,68 @@
           </ul>
         </article>
         <article class="footer__summary-media">
-          <h3>Volg ons</h3>
+          <h3 role="meer op social media">Volg ons</h3>
           <ul class="smedia">
             <li>
               <a
                 target="_blank"
                 href="https://www.facebook.com/straattheaterfestivalbeveren/"
               >
-                <img src="assets/img/logo/facebook.svg" alt=""
-              /></a>
+              <picture >
+                  <source
+                    type="image/webp"
+                    media="(min-width: 0px)"
+                    srcset="assets/img/logo/facebook.webp 1x"
+                  />
+
+                  <source
+                    type="image/png"
+                    media="(min-width: 0px)"
+                    srcset="assets/img/logo/facebook.png 1x"
+                  />
+                  <img src="assets/img/logo/facebook.png" alt="logo facebook" class="round"/>
+                </picture>
+              </a>
             </li>
             <li>
               <a target="_blank" href="https://www.instagram.com/"
-                ><img src="assets/img/logo/instagram.svg" alt=""
-              /></a>
+                >
+                <picture >
+                  <source
+                    type="image/webp"
+                    media="(min-width: 0px)"
+                    srcset="assets/img/logo/instagram.webp 1x"
+                  />
+
+                  <source
+                    type="image/png"
+                    media="(min-width: 0px)"
+                    srcset="assets/img/logo/instagram.png 1x"
+                  />
+                  <img src="assets/img/logo/instagram.png" alt="logo instagram" class="round"/>
+                </picture>
+              </a>
             </li>
             <li>
               <a
                 target="_blank"
                 href="https://www.youtube.com/channel/UCyLydUlLUg_pBIAaWOKwkxQ"
-                ><img src="assets/img/logo/youtube.svg" alt=""
-              /></a>
+                >
+                <picture >
+                  <source
+                    type="image/webp"
+                    media="(min-width: 0px)"
+                    srcset="assets/img/logo/youtube.webp 1x"
+                  />
+
+                  <source
+                    type="image/png"
+                    media="(min-width: 0px)"
+                    srcset="assets/img/logo/youtube.png 1x"
+                  />
+                  <img src="assets/img/logo/youtube.png" alt="logo youtube" class="round"/>
+                </picture>
+            </a>
             </li>
           </ul>
         </article>
@@ -186,24 +227,92 @@
       <section class="sponsors">
         <h2 class="hidden">Sponsors</h2>
         <a class="dorp" target="_blank" href="http://www.winkeldorp.be/">
-          <img src="assets/img/logo/winkeldorp.svg" alt="logo winkeldorp" />
+        <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/winkeldorp.webp 1x"
+          />
+
+          <source
+            type="image/jpg"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/winkeldorp.jpg 1x"
+          />
+          <img src="assets/img/logo/winkeldorp.jpg" alt="logo winkeldorp" />
+        </picture>
+
         </a>
         <a class="horeca"
           target="_blank"
           href="https://www.handelsgids.be/sector/beveren/horeca/">
-          <img src="assets/img/logo/horeca.svg" alt="logo horeca beveren"/>
+          <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/horeca.webp 1x"
+          />
+
+          <source
+            type="image/jpg"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/horeca.jpg 1x"
+          />
+          <img src="assets/img/logo/horeca.jpg" alt="logo horeca beveren" />
+        </picture>
         </a>
         <a class="eclats"
           target="_blank" href="http://www.aouteneclats.be/">
-          <img src="assets/img/logo/scouts.svg" alt="logo scouts Sint-Martinus" />
+          <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/scouts.webp 1x"
+          />
+
+          <source
+            type="image/jpg"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/scouts.jpg 1x"
+          />
+          <img src="assets/img/logo/winkeldorp.jpg" alt="logo scouts Sint-Martinus" />
+        </picture>
         </a>
         <a class="warande"
           target="_blank" href="http://www.warandeshopping.be/">
-          <img src="assets/img/logo/warande.svg" alt="logo Warande" />
+          <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/warande.webp 1x"
+          />
+
+          <source
+            type="image/jpg"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/warande.jpg 1x"
+          />
+          <img src="assets/img/logo/warande.jpg" alt="logo winkelwarandedorp" />
+        </picture>
         </a>
         <a class="bf"
           target="_blank" href="http://beverse-feesten.be/">
-          <img class="logo" src="assets/img/logo/beverseFeesten.svg" alt="logo Beverse Feesten" />
+          <picture>
+          <picture>
+          <source
+            type="image/webp"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/beverseFeesten.webp 1x"
+          />
+
+          <source
+            type="image/jpg"
+            media="(min-width: 0px)"
+            srcset="assets/img/logo/beverseFeesten.jpg 1x"
+          />
+          <img src="assets/img/logo/beverseFeesten.jpg" alt="logo Beverse Feesten" />
+        </picture>
+          </picture>
         </a>
       </section>
       <section class="copyright">

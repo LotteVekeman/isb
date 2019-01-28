@@ -1,10 +1,10 @@
-  <main class="act__detail">
+  <main role="detailpg" class="act__detail">
       <header class="act__detail-header">
-        <a class="back" href="index.php?page=lineup">
+        <a role="link naar overzicht" class="back" href="index.php?page=lineup">
           <p class="back-text">keer terug naar overzicht</p>
         </a>
 
-        <div class="act__detail-name">
+        <div role="header detail" class="act__detail-name">
           <h1 class="detail-nameTitle"><?php echo $act['name'];?></h1>
           <p class="detail-nameArtist">door <?php echo $act['artist'];?></p>
         </div>
@@ -18,27 +18,27 @@
       </header>
 
 
-      <section class="act__detail-info">
+      <section role="meer info over event" class="act__detail-info">
         <h2 class="hidden">headerinfo</h2>
         <p class="info-type">#<?php echo $act['type'];?></p>
         <img class="act__detail-photo2" width="300px"
             src="./assets/img/isb/<?php echo $act['day'];?>/<?php echo $act['type'];?>/<?php echo $act["imgpath"];?>.jpg"
             alt="Foto van <?php echo $act['artist'];?>"
         />
-        <dl class="act__detail__infoList">
+        <dl role="list van gegevens" class="act__detail__infoList" role="">
           <div class="infoList-row detail__info-day">
             <dt class="icon"><img src="assets/img/icon/calendar.png" alt="" /></dt>
-            <dd><?php echo $act['day'];?></dd>
+            <dd role="dag van event"><?php echo $act['day'];?></dd>
           </div>
           <div class="infoList-row detail__info-time">
             <dt class="icon"><img src="assets/img/icon/clock.png" alt="" /></dt>
-            <dd>
+            <dd role="tijd(en) van event">
             <?php echo $act['time'];?>
             <dd>
           </div>
           <div class="infoList-row detail__info-location">
             <dt class="icon"><img src="assets/img/icon/location.png" alt="" /></dt></dt>
-            <dd>
+            <dd role="plaats van event">
               <a target="_blank" href="<?php echo $act['link'];?>">
                 <?php echo $act['place'];?>
               </a>
@@ -46,17 +46,17 @@
           </div>
           <div class="infoList-row detail__info-country">
             <dt class="icon"><img src="assets/img/icon/nationality.png" alt="" /></dt></dt>
-            <dd><?php echo $act['country'];?></dd>
+            <dd role="nationaliteit van de acteurs"><?php echo $act['country'];?></dd>
           </div>
           <div class="infoList-row detail__info-site">
             <dt class="icon"><img src="assets/img/icon/globe.png"" alt="" /></dt></dt>
-            <dd><a target="_blank" href="<?php echo $act['site'];?>">officiële website</a></dd>
+            <dd role="website van vereniging"><a target="_blank" href="<?php echo $act['site'];?>">officiële website</a></dd>
           </div>
         </dl>
-        <p class="detail__info-intro"><?php echo $act['intro'];?></p>
+        <p role="meer info over event " class="detail__info-intro"><?php echo $act['intro'];?></p>
       </section>
 
-      <section class="act__detail-others">
+      <section role="suggesties voor andere" class="act__detail-others">
           <h2>Moet je gezien hebben</h2>
           <ul>
             <li class="item">
