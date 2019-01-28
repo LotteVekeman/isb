@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ISB</title>
     <?php echo $css;?>
     <link rel="icon" href="assets/img/icon.png" />
@@ -32,7 +33,7 @@
             <input
               type="radio"
               id="switch_nl"
-              name="switch_nl"
+              name="language"
               value="Nederlands"
               checked
             />
@@ -40,7 +41,7 @@
             <input
               type="radio"
               id="switch_eng"
-              name="switch_eng"
+              name="language"
               value="English"
             />
             <label for="switch_eng">ENG</label>
@@ -142,7 +143,7 @@
           </ul>
         </article>
         <article class="footer__summary-about">
-          <h3 class="meer info over festival">Over</h3>
+          <h3 role="meer info over festival">Over</h3>
           <ul>
             <li><a class="footerLink" href="index.php?page=fallback">Geschiedenis</a></li>
             <li><a class="footerLink" href="index.php?page=fallback">Vorige edities</a></li>

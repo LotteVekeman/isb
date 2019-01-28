@@ -172,7 +172,7 @@
       <section role="vorige editie" class="kijker">
         <header class="nameHeader">
           <h2>Trip Down Memory Lane</h2>
-          <p class="namesIntro">Hieronder krijg je het promofilmpje van vorig jaar te zien</p>
+          <p class="namesIntro">Hieronder kun je het promofilmpje van vorig jaar bekijken</p>
         </header>
         <title class="video__title">Promofilmpje vorig jaar</title>
         <iframe role="video" class="memory__video" height="300"
@@ -202,15 +202,15 @@
                       <source
                         type="image/webp"
                         media="(min-width: 0px)"
-                        srcset="assets/img/andereActiviteiten/OlympischeStraat.webp 1x"
+                        srcset="assets/img/andereActiviteiten/olympischeStraat.webp 1x"
                       />
 
                       <source
                         type="image/jpg"
                         media="(min-width: 0px)"
-                        srcset="assets/img/andereActiviteiten/OlympischeStraat.jpg 1x"
+                        srcset="assets/img/andereActiviteiten/olympischeStraat.jpg 1x"
                       />
-                      <img class="top" src="assets/img/andereActiviteiten/OlympischeStraat.jpg" alt="2 turnsters op een trampoline" />
+                      <img class="top" src="assets/img/andereActiviteiten/olympischeStraat.jpg" alt="2 turnsters op een trampoline" />
                     </picture>
                   </div>
               </article>
