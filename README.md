@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-#straattheater
-
 Zorg voor vernieuwende design en development voor het Internationaal Straattheaterfestival Beveren. De bezoeker moet op voorhand zijn bezoek kunnen regelen. Tijdens het festival kan hij de site raadplegen.
 Maak volgende zaken:
 Homepagina
@@ -12,4 +9,3 @@ weergave activiteiten
 voorbeeld zoek en/of gefilterde resultaten
 Detail
 2 diverse activiteiten
-=======
