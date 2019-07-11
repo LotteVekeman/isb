@@ -1,11 +1,16 @@
 :root {
-  --black: black;
-  --white: white;
+  
   --light: #d2b8db;
   --pink: #97217e;
   --purple: #754885;
   --aqua: #8df7e7;
   --gray: #cecbcb;
+
+  /* --purple: #7F0E7E; */
+  --neonCarrot: #FD9827;
+  --pearlLusta: #E8E0C9;
+  --toreaBay: #394071;
+  --malibu: #5DC6F0;
   --weight-regular: 400;
   --weight-bold: 700;
 }

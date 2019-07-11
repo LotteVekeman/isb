@@ -1,72 +1,83 @@
-  <main role="detailpg" class="act__detail">
+  <main class="act__detail">
       <header class="act__detail-header">
-        <a role="link naar overzicht" class="back" href="index.php?page=lineup">
+        <img src="./assets/img/headerdetail.png" alt="abstract beeld met emma en tekst artiest ">
+        <a class="back" href="index.php?page=lineup">
           <p class="back-text">keer terug naar overzicht</p>
         </a>
-
-        <div role="header detail" class="act__detail-name">
-          <h1 class="detail-nameTitle"><?php echo $act['name'];?></h1>
-          <p class="detail-nameArtist">door <?php echo $act['artist'];?></p>
-        </div>
-
-        <div class="gradient3">
-          <img class="top act__detail-photo"
-            src="./assets/img/isb/<?php echo $act['day'];?>/<?php echo $act['type'];?>/<?php echo $act["imgpath"];?>.jpg"
-            alt="Foto van <?php echo $act['artist'];?>"
-          />
-        </div>
       </header>
 
 
-      <section role="meer info over event" class="act__detail-info">
-        <h2 class="hidden">headerinfo</h2>
-        <p class="info-type">#<?php echo $act['type'];?></p>
-        <img class="act__detail-photo2" width="300px"
+      <section class="act__detail-info">
+        <header class="act__detail-name">
+          <h1 class="detail-nameTitle"><?php echo $act['name'];?></h1>
+          <p class="detail-nameArtist">door <?php echo $act['artist'];?></p>
+        </header>
+        <img class="act__detail-photo2"
             src="./assets/img/isb/<?php echo $act['day'];?>/<?php echo $act['type'];?>/<?php echo $act["imgpath"];?>.jpg"
             alt="Foto van <?php echo $act['artist'];?>"
         />
-        <dl role="list van gegevens" class="act__detail__infoList" role="">
+        <dl>
           <div class="infoList-row detail__info-day">
             <dt class="icon"><img src="assets/img/icon/calendar.png" alt="" /></dt>
-            <dd role="dag van event"><?php echo $act['day'];?></dd>
+            <dd><?php echo $act['day'];?></dd>
           </div>
           <div class="infoList-row detail__info-time">
             <dt class="icon"><img src="assets/img/icon/clock.png" alt="" /></dt>
-            <dd role="tijd(en) van event">
+            <dd>
             <?php echo $act['time'];?>
             <dd>
           </div>
           <div class="infoList-row detail__info-location">
-            <dt class="icon"><img src="assets/img/icon/location.png" alt="" /></dt></dt>
-            <dd role="plaats van event">
+            <dt class="icon"><img src="assets/img/icon/location.png" alt="" /></dt>
+            <dd>
               <a target="_blank" href="<?php echo $act['link'];?>">
-                <?php echo $act['place'];?>
+              <?php echo $act['place'];?>
               </a>
             </dd>
           </div>
           <div class="infoList-row detail__info-country">
-            <dt class="icon"><img src="assets/img/icon/nationality.png" alt="" /></dt></dt>
-            <dd role="nationaliteit van de acteurs"><?php echo $act['country'];?></dd>
+            <dt class="icon"><img src="assets/img/icon/nationality.png" alt="" /></dt>
+            <dd><?php echo $act['country'];?></dd>
           </div>
           <div class="infoList-row detail__info-site">
-            <dt class="icon"><img src="assets/img/icon/globe.png"" alt="" /></dt></dt>
-            <dd role="website van vereniging"><a target="_blank" href="<?php echo $act['site'];?>">officiële website</a></dd>
+            <dt class="icon"><img src="assets/img/icon/globe.png" alt="" /></dt>
+            <dd><a target="_blank" href="<?php echo $act['site'];?>">officiële website</a></dd>
           </div>
         </dl>
-        <p role="meer info over event " class="detail__info-intro"><?php echo $act['intro'];?></p>
+        <p class="detail__info-intro"><?php echo $act['intro'];?></p>
       </section>
 
-      <section role="suggesties voor andere" class="act__detail-others">
-          <h2>Moet je gezien hebben</h2>
+     <section> 
+          <header>
+            <h2>Locatie</h2>
+            <p>Onze voorstellingen bevinden zich plaats op bepaalde plekken in Beveren. De walking acts en installatieacts vind je langs het vaste parcours in de centrumstraten</p>
+          </header>
+          <ol>
+            <li><a target="_blank" href="http://tiny.cc/6jqk9y">Oud Atletiekplein</a></li>
+            <li><a target="_blank" href="https://bit.ly/2TaUds0">Speelplaats KA/BS De Bever</a></li>
+            <li><a target="_blank" href="https://bit.ly/2U3X59W">Donkvijverstraat</a></li>
+            <li><a target="_blank" href="http://tiny.cc/owqk9y">Diederik van Beverenlaan</a></li>
+            <li><a target="_blank" href="http://tiny.cc/9wqk9y">Yzerhand</a></li>
+            <li><a target="_blank" href="http://tiny.cc/qxqk9y">Vrasenestraat</a></li>
+            <li><a target="_blank" href="http://tiny.cc/zyqk9y">Warande</a></li>
+            <li><a target="_blank" href="http://tiny.cc/7yqk9y">Grote Markt</a></li>
+            <li><a target="_blank" href="http://tiny.cc/ozqk9y">N70</a></li>
+            <li><a target="_blank" href="http://tiny.cc/hpqk9y">Podium achter de kerk</a></li>
+          </ol>
+          <img src="./assets/img/map.png" alt="kaart met locaties van voorstellingen" height="300px">
+      </section>
+
+      <section class="act__detail-others">
+          <h2>Op dezelfde dag</h2>
           <ul>
             <li class="item">
-              <a class="kijkerLink' href="index.php?page=detail&amp;id=<?php echo $other['id'];?>">
+              <a class="kijkerLink" href="index.php?page=detail&amp;id=<?php echo $other['id'];?>">
               <article>
                 <div class="infoGradient">
                   <p class="dayLabel"><?php echo $other['time'];?></p>
-                  <div class="textLabel">
+                  <div class="textLabel">x
                     <h3>
-                      <?php
+                    <?php
                       echo $other['artist'];?>
                       <sup>
                         <?php if($other['artist']!== ''){
@@ -80,7 +91,7 @@
 
                 <div class="gradient">
                   <img class="top"
-                      src="./assets/img/isb/<?php echo $other['day'];?>/<?php echo $other['type'];?>/<?php echo $other["imgpath"];?>.jpg" width="300px"
+                      src="./assets/img/isb/<?php echo $other['day'];?>/<?php echo $other['type'];?>/<?php echo $other["imgpath"];?>.jpg"
                       alt="Foto van <?php echo $other['artist'];?>"/>
                 </div>
               </article>

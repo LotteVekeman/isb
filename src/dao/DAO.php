@@ -1,10 +1,17 @@
 <?php
 class DAO {
-  private static $dbHost = "ID276496_isb.db.webhosting.be";
-  private static $dbName = "ID276496_isb";
-  private static $dbUser = "ID276496_isb";
-  private static $dbPass = "isbstraattheater@1";
+  // private static $dbHost = "ID276496_isb.db.webhosting.be";
+  // private static $dbName = "ID276496_isb";
+  // private static $dbUser = "ID276496_isb";
+  // private static $dbPass = "isbstraattheater@1";
+  // private static $sharedPDO;
+
+  private static $dbHost = "localhost";
+  private static $dbName = "isb";
+  private static $dbUser = "isbuser";
+  private static $dbPass = "isbpass";
   private static $sharedPDO;
+
 
   protected $pdo;
 
