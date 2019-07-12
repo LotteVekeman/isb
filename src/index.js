@@ -1,7 +1,7 @@
 require('./style.css');
 
 console.log('ik zie mijzelf');
-// {
+//{
 //   const $filterForm = document.querySelector(`.filter__form`),
 //     $players = document.querySelector(`.players__list`);
 

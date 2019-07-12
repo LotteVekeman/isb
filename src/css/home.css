@@ -20,7 +20,7 @@
 
 .kijkerList {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   margin-bottom: 4rem;
 
@@ -41,11 +41,12 @@
     } */
 }
 
-.kijkerLink {
-  width: 20rem;
+.item {
+  display: flex;
+  align-items: center;
 }
 
-.first {
+/* .first {
   grid-area: one;
 }
 
@@ -65,6 +66,106 @@
     margin-top: 0;
     margin-left: 0;
   }
+} */
+
+.kijker__act-info {
+  position: absolute;
+  height: 30rem;
+  width: 30rem;
+  z-index: 1;
+
+  display: grid;
+  grid-template-columns: 5% 10fr 40% 5%;
+  grid-template-rows: 3rem 2fr 57%;
+  grid-template-areas:
+    '. . label .'
+    '. . . .'
+    'info info info info';
+
+  border-radius: 1rem;
+}
+
+.kijker__act-typeLabel {
+  grid-area: label;
+  display: inline-block;
+  position: relative;
+  color: black;
+
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--malibu);
+    transform: skew(-30deg);
+  }
+}
+
+.kijker__act-textLabel {
+  grid-area: info;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  font-size: 1.8rem;
+  color: white;
+
+  background-image: url(../assets/img/itembg.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.kijker__act-textLabel-artist {
+  font-size: 1.8rem;
+  color: white;
+
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.kijker__act-textLabel-place {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.kijker__act-textLabel-time {
+  margin-left: 1.5rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+}
+
+.kijker__act-textLabel-day {
+  margin-right: 1.5rem;
+}
+
+sup {
+  font-size: 1.1rem;
+  font-variant-position: super;
+}
+
+.kijker__act-img {
+  width: 30rem;
+  height: 30rem;
+
+  overflow: hidden;
+}
+
+.top {
+  height: 100%;
+  width: 100%;
+
+  object-fit: cover;
 }
 
 .aangenaam__list {
@@ -136,9 +237,18 @@
   }
 }
 
+.location__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  height: 24rem;
+}
+
 .location__item {
   position: relative;
   margin-bottom: 2.5rem;
+  margin-right: 1.5rem;
 
   display: flex;
   align-content: center;
@@ -163,14 +273,14 @@ span {
   color: black;
 
   text-decoration: none;
+
+  &::hover {
+    text-decoration: underline;
+  }
 }
 
 .location__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  width: 80%;
-
-  margin-left: 10%;
 }

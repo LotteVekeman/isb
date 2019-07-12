@@ -1,70 +1,124 @@
-  <main class="act__detail">
-      <header class="act__detail-header">
-        <img src="./assets/img/headerdetail.png" alt="abstract beeld met emma en tekst artiest ">
-        <a class="back" href="index.php?page=lineup">
-          <p class="back-text">keer terug naar overzicht</p>
-        </a>
-      </header>
+  <main>
+      <div class="detailbg">
+        <header>
+          <img src="./assets/img/headerdetail.png" alt="abstract beeld met emma en tekst artiest ">
+          <a class="back" href="index.php?page=lineup">
+            <p>keer terug naar overzicht</p>
+          </a>
+        </header>
 
-
-      <section class="act__detail-info">
+       <section class="act__detail-info">
         <header class="act__detail-name">
-          <h1 class="detail-nameTitle"><?php echo $act['name'];?></h1>
+          <h1><?php echo $act['name'];?></h1>
           <p class="detail-nameArtist">door <?php echo $act['artist'];?></p>
         </header>
-        <img class="act__detail-photo2"
+        <img class="act__detail-photo"
             src="./assets/img/isb/<?php echo $act['day'];?>/<?php echo $act['type'];?>/<?php echo $act["imgpath"];?>.jpg"
             alt="Foto van <?php echo $act['artist'];?>"
         />
-        <dl>
-          <div class="infoList-row detail__info-day">
+        <dl class="act__detail-infoList">
+          <div class="act__detail-infoList-item">
             <dt class="icon"><img src="assets/img/icon/calendar.png" alt="" /></dt>
-            <dd><?php echo $act['day'];?></dd>
+            <dd class="act__detail__infoList-text"><?php echo $act['day'];?></dd>
           </div>
-          <div class="infoList-row detail__info-time">
+          <div class="act__detail-infoList-item">
             <dt class="icon"><img src="assets/img/icon/clock.png" alt="" /></dt>
-            <dd>
-            <?php echo $act['time'];?>
+            <dd class="act__detail__infoList-text">
+              <?php echo $act['time'];?>
             <dd>
           </div>
-          <div class="infoList-row detail__info-location">
+          <div class="act__detail-infoList-item">
             <dt class="icon"><img src="assets/img/icon/location.png" alt="" /></dt>
             <dd>
-              <a target="_blank" href="<?php echo $act['link'];?>">
+              <a target="_blank" href="<?php echo $act['link'];?>" class="act__detail__infoList-text">
               <?php echo $act['place'];?>
               </a>
             </dd>
           </div>
-          <div class="infoList-row detail__info-country">
+          <div class="act__detail-infoList-item">
             <dt class="icon"><img src="assets/img/icon/nationality.png" alt="" /></dt>
-            <dd><?php echo $act['country'];?></dd>
+            <dd class="act__detail__infoList-text"><?php echo $act['country'];?></dd>
           </div>
-          <div class="infoList-row detail__info-site">
+          <div class="act__detail-infoList-item">
             <dt class="icon"><img src="assets/img/icon/globe.png" alt="" /></dt>
-            <dd><a target="_blank" href="<?php echo $act['site'];?>">officiële website</a></dd>
+            <dd><a target="_blank" href="<?php echo $act['site'];?>" class="act__detail__infoList-text">officiële website</a></dd>
           </div>
         </dl>
         <p class="detail__info-intro"><?php echo $act['intro'];?></p>
       </section>
+      </div>
 
-     <section> 
-          <header>
+      <section class="pageLayout">
+          <header class="pageLayout__header">
             <h2>Locatie</h2>
-            <p>Onze voorstellingen bevinden zich plaats op bepaalde plekken in Beveren. De walking acts en installatieacts vind je langs het vaste parcours in de centrumstraten</p>
+            <p class="pageLayout__intro">Onze voorstellingen bevinden zich plaats op bepaalde plekken in Beveren. De walking acts en installatieacts vind je langs het vaste parcours in de centrumstraten.</p>
           </header>
-          <ol>
-            <li><a target="_blank" href="http://tiny.cc/6jqk9y">Oud Atletiekplein</a></li>
-            <li><a target="_blank" href="https://bit.ly/2TaUds0">Speelplaats KA/BS De Bever</a></li>
-            <li><a target="_blank" href="https://bit.ly/2U3X59W">Donkvijverstraat</a></li>
-            <li><a target="_blank" href="http://tiny.cc/owqk9y">Diederik van Beverenlaan</a></li>
-            <li><a target="_blank" href="http://tiny.cc/9wqk9y">Yzerhand</a></li>
-            <li><a target="_blank" href="http://tiny.cc/qxqk9y">Vrasenestraat</a></li>
-            <li><a target="_blank" href="http://tiny.cc/zyqk9y">Warande</a></li>
-            <li><a target="_blank" href="http://tiny.cc/7yqk9y">Grote Markt</a></li>
-            <li><a target="_blank" href="http://tiny.cc/ozqk9y">N70</a></li>
-            <li><a target="_blank" href="http://tiny.cc/hpqk9y">Podium achter de kerk</a></li>
-          </ol>
-          <img src="./assets/img/map.png" alt="kaart met locaties van voorstellingen" height="300px">
+          <div class="location__content">
+            <ol class="location__list">
+              <li class="location__item">
+               <span>1</span>
+                <a target="_blank" href="http://tiny.cc/6jqk9y" class="location__place">
+                  Oud Atletiekplein
+                </a>
+              </li>
+              <li class="location__item">
+                <span>2</span>
+                <a target="_blank" href="https://bit.ly/2TaUds0" class="location__place">
+                  Speelplaats KA/BS De Bever
+                </a>
+              </li>
+              <li class="location__item">
+                <span>3</span>
+                <a target="_blank" href="https://bit.ly/2U3X59W" class="location__place">
+                  Donkvijverstraat
+                </a>
+              </li>
+              <li class="location__item">
+                <span>4</span>
+                <a target="_blank" href="http://tiny.cc/owqk9y" class="location__place">
+                  Diederik van Beverenlaan
+                </a>
+              </li>
+
+              <li class="location__item">
+                <span>5</span>
+                <a target="_blank" href="http://tiny.cc/9wqk9y" class="location__place">
+                 Yzerhand
+                </a>
+              </li>
+              <li class="location__item">
+               <span>6</span>
+                <a target="_blank" href="http://tiny.cc/qxqk9y" class="location__place">
+                  Vrasenestraat
+                </a>
+              </li>
+              <li class="location__item">
+                <span>7</span>
+                <a target="_blank" href="http://tiny.cc/zyqk9y" class="location__place">
+                  Warande
+                </a>
+              </li>
+              <li class="location__item">
+                <span>8</span>
+                <a target="_blank" href="http://tiny.cc/7yqk9y" class="location__place">
+                  Grote Markt
+                </a>
+              </li>
+              <li class="location__item">
+                <span>9</span>
+                <a target="_blank" href="http://tiny.cc/ozqk9y" class="location__place">
+                 N70
+                </a>
+              </li>
+              <li class="location__item">
+                <span>10</span>
+                <a target="_blank" href="http://tiny.cc/hpqk9y" class="location__place">
+                  Podium achter de kerk
+                </a>
+              </li>
+            </ol>
+            <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen" height="300px">
+          </div>
       </section>
 
       <section class="act__detail-others">

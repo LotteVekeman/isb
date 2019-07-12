@@ -14,60 +14,60 @@
 
         <ul class="kijkerList">
           <li class="item first">
-            <a class="kijkerLink" href="index.php?page=detail&id=51">
+            <a href="index.php?page=detail&id=51">
               <article>
-                <div class="infoGradient">
-                 <p class="dayLabel">voorstelling</p>
-                  <div class="textLabel">
-                    <h3>The Flying Dutchmen<sup> NL </sup></h3>
-                    <p>Speeplaats KA/BS De Bever</p>
-                    <div>
-                      <p>vrijdag</p>
+                <div class="kijker__act-info">
+                  <p class="kijker__act-typeLabel">voorstelling</p>
+                  <div class="kijker__act-textLabel">
+                    <h3 class="kijker__act-textLabel-artist">The Flying Dutchmen<sup> NL </sup></h3>
+                    <p class="kijker__act-textLabel-place">Speeplaats KA/BS De Bever</p>
+                    <div class="kijker__act-textLabel-time">
+                      <p class="kijker__act-textLabel-day">vrijdag</p>
                       <p>18:00-18:40 20:15-20:55</p>
                     </div>
                   </div>
                 </div>
-                <div class="gradient">
+                <div class="kijker__act-img">
                   <img class="top" src="assets/img/isb/vrijdag/voorstelling/004-the-flying-dutchmen.jpg" alt="foto van The Flying Dutchmen" />
                 </div>
               </article>
             </a>
           </li>
           <li class="item two">
-            <a class="kijkerLink" href="index.php?page=detail&id=49">
+            <a href="index.php?page=detail&id=49">
             <article>
-              <div class="infoGradient">
-                <p class="dayLabel">voorstelling</p>
-                <div class="textLabel">
-                  <h3>Cie Sitting Duck<sup> BE </sup></h3>
-                  <p>Oud Atletiekplein</p>
-                  <div>
-                    <p>vrijdag</p>
+              <div class="kijker__act-info">
+                <p class="kijker__act-typeLabel">voorstelling</p>
+                <div class="kijker__act-textLabel">
+                  <h3 class="kijker__act-textLabel-artist">Cie Sitting Duck<sup> BE </sup></h3>
+                  <p class="kijker__act-textLabel-place">Oud Atletiekplein</p>
+                  <div class="kijker__act-textLabel-time">
+                    <p class="kijker__act-textLabel-day">vrijdag</p>
                     <p>20:15-21:10</p>
                   </div>
                 </div>
               </div>
-              <div class="gradient">
+              <div class="kijker__act-img">
                 <img class="top" src="assets/img/isb/vrijdag/voorstelling/005-sitting-duck-chiringuito-paradise.jpg" alt="foto van Sie sitting Duck" />
               </div>
             </article>
             </a>
           </li>
           <li class="item three">
-            <a class="kijkerLink" href="index.php?page=detail&id=48">
+            <a href="index.php?page=detail&id=48">
             <article>
-              <div class="infoGradient">
-                <p class="dayLabel">voorstelling</p>
-                <div class="textLabel">
-                  <h3>Cie Xav To Yilo<sup> FR </sup></h3>
-                  <p>Speelplaats KA/BS De Bever</p>
-                  <div>
-                    <p>vrijdag</p>
+              <div class="kijker__act-info">
+                <p class="kijker__act-typeLabel">voorstelling</p>
+                <div class="kijker__act-textLabel">
+                  <h3 class="kijker__act-textLabel-artist">Cie Xav To Yilo<sup> FR </sup></h3>
+                  <p class="kijker__act-textLabel-place">Speelplaats KA/BS De Bever</p>
+                  <div class="kijker__act-textLabel-time">
+                    <p class="kijker__act-textLabel-day">vrijdag</p>
                     <p>19:30-20:00 22:00-22:30</p>
                   </div>
                 </div>
               </div>
-              <div class="gradient">
+              <div class="kijker__act-img">
                 <img class="top" src="assets/img/isb/vrijdag/voorstelling/006-xav-to-yilo-silento.jpg" alt="foto van Cie Xav To Yilo" />
               </div>
             </article>
@@ -221,7 +221,7 @@
             <p class="pageLayout__intro">Onze voorstellingen bevinden zich plaats op bepaalde plekken in Beveren. De walking acts en installatieacts vind je langs het vaste parcours in de centrumstraten.</p>
           </header>
           <div class="location__content">
-            <ol>
+            <ol class="location__list">
               <li class="location__item">
                <span>1</span>
                 <a target="_blank" href="http://tiny.cc/6jqk9y" class="location__place">
@@ -286,7 +286,6 @@
             </ol>
             <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen" height="300px">
           </div>
-
       </section>
 
     </main>

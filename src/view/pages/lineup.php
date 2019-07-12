@@ -83,13 +83,14 @@
         <h2><?php echo count($results);?> Resultaten</h2>
         <ul class="filter__result-list">
           <?php foreach($results as $result): ?>
+
             <li class="item">
               <a href="index.php?page=detail&amp;id=<?php echo $result['id'];?>">
               <article>
-                <div class="infoGradient">
-                  <p class="dayLabel"><?php echo $result['time'];?></p>
-                  <div class="textLabel">
-                    <h3>
+                <div class="kijker__act-info">
+                  <p class="kijker__act-typeLabel"><?php echo $result['type'];?></p>
+                  <div  class="kijker__act-textLabel">
+                    <h3 class="kijker__act-textLabel-artist">
                       <?php
                       echo $result['artist'];?>
                       <sup>
@@ -98,11 +99,14 @@
                         }?>
                       </sup>
                     </h3>
-                    <p class="textLabel__name"><?php echo $result['name'];?></p>
+                    <p class="kijker__act-textLabel-place"><?php echo $result['name'] ;?></p>
+                    <div class="kijker__act-textLabel-time" >
+                    <p class="kijker__act-textLabel-day"><?php echo $result['day'] ;?></p>
+                      <p><?php echo $result['time'] ;?></p>
+                    </div>
                   </div>
                 </div>
-
-                <div class="gradient">
+                <div class="kijker__act-img">
                   <img class="top"
                       src="./assets/img/isb/<?php echo $result['day'];?>/<?php echo $result['type'];?>/<?php echo $result["imgpath"];?>.jpg" width="300px"
                       alt="Foto van <?php echo $result['artist'];?>"/>
