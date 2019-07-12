@@ -7,11 +7,11 @@
         <header class="pageLayout__header">
           <h2>Nieuwe namen</h2>
           <p class="pageLayout__intro">
-            Ontdek de artiesten die deze editie speciaal naar ons festival komen. 
+            Ontdek de artiesten die deze editie speciaal naar ons festival komen.
             Ze zijn hier voor het eerst, maar hebben zoveel meer in peto voor jou en het gezin.
           </p>
         </header>
-        
+
         <ul class="kijkerList">
           <li class="item first">
             <a class="kijkerLink" href="index.php?page=detail&id=51">
@@ -80,7 +80,7 @@
       <section class="pageLayout">
          <header class="pageLayout__header">
            <h2>Aangenaam</h2>
-            <p class="pageLayout__intro">We zijn heel trots op wat we allemaal te bieden hebben. Ontdek onze grootste troeven hieronder</p>
+            <p class="pageLayout__intro">We zijn heel trots op wat we allemaal te bieden hebben. Het geeft van ons festival een unieke waarde. Ontdek onze grootste troeven hieronder</p>
          </header>
          <div class="aangenaam__list">
           <article class="aangenaam__list-item">
@@ -95,7 +95,7 @@
             <img src="assets/img/icon/iconActs.png" alt="clown in ruiten en bollen" width="150px">
               <h3 class="aangenaam__list-item-title">>50 acts</h3>
               <p class="aangenaam__list-item-text">
-                Het Internationaal Straattheaterfestival heeft heel wat te bieden. Laat je meeslepen door de talloze verscheidenheid van onze 50 acts. 
+                Het Internationaal Straattheaterfestival heeft heel wat te bieden. Laat je meeslepen door de talloze verscheidenheid van onze 50 acts.
                 Voor ieder wat wils tijdens deze 3 dagen.
               </p>
           </article>
@@ -103,12 +103,12 @@
             <img src="assets/img/icon/iconLand.png" alt="wereldbol in ruiten en bollen" width="150px">
             <h3 class="aangenaam__list-item-title">8 landen</h3>
             <p class="aangenaam__list-item-text">
-             Het is een internationaal feest waar vele landeneen deel uitmaken. Zo komen er artiesten van België, Nederland, Frankrijk, Duitsland, 
+             Het is een internationaal feest waar vele landeneen deel uitmaken. Zo komen er artiesten van België, Nederland, Frankrijk, Duitsland,
             Italië, Groot-Brittannië, Spanje. Maar ook uit andere delen van de wereld zoals Argentinië, Canada en Guatemala.
           </p>
           </article>
          </div>
-        
+
       </section>
 
       <div class="edition">
@@ -120,20 +120,21 @@
               Like en sharen mag altijd!
            </p>
           </header>
-          <iframe class="edition__movie" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstraattheaterfestivalbeveren%2Fvideos%2F2143405049271082%2F&show_text=0&width=560" 
-            width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true">
+          <iframe class="edition__movie" width="500" height="250"
+            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstraattheaterfestivalbeveren%2Fvideos%2F2143405049271082%2F&show_text=0&width=560"
+            scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true">
           </iframe>
           <!-- <iframe class="memory__video" height="300"
            src="https://www.youtube.com/embed/lrlscBtuSUM">
           </iframe> -->
-        </section>  
+        </section>
       </div>
 
-      <section class="page__layout">
-        <header class="pageLayout_header">
+      <section class="pageLayout">
+        <header class="pageLayout__header">
           <h2>Andere activiteiten</h2>
           <p class="pageLayout__intro">
-            Tijdens de Beverse Feesten staan er nog heel wat andere activiteiten gepland. Waaronder een paar leuk extra's. Ontdek ze hieronder: 
+            Tijdens de Beverse Feesten staan er nog heel wat andere activiteiten gepland. Waaronder een paar leuk extra's. Ontdek ze hieronder:
           </p>
         </header>
 
@@ -214,24 +215,78 @@
         </ul>
       </section>
 
-      <section> 
-          <header>
+      <section class="pageLayout">
+          <header class="pageLayout__header">
             <h2>Locatie</h2>
-            <p>Onze voorstellingen bevinden zich plaats op bepaalde plekken in Beveren. De walking acts en installatieacts vind je langs het vaste parcours in de centrumstraten</p>
+            <p class="pageLayout__intro">Onze voorstellingen bevinden zich plaats op bepaalde plekken in Beveren. De walking acts en installatieacts vind je langs het vaste parcours in de centrumstraten.</p>
           </header>
-          <ol>
-            <li><a target="_blank" href="http://tiny.cc/6jqk9y">Oud Atletiekplein</a></li>
-            <li><a target="_blank" href="https://bit.ly/2TaUds0">Speelplaats KA/BS De Bever</a></li>
-            <li><a target="_blank" href="https://bit.ly/2U3X59W">Donkvijverstraat</a></li>
-            <li><a target="_blank" href="http://tiny.cc/owqk9y">Diederik van Beverenlaan</a></li>
-            <li><a target="_blank" href="http://tiny.cc/9wqk9y">Yzerhand</a></li>
-            <li><a target="_blank" href="http://tiny.cc/qxqk9y">Vrasenestraat</a></li>
-            <li><a target="_blank" href="http://tiny.cc/zyqk9y">Warande</a></li>
-            <li><a target="_blank" href="http://tiny.cc/7yqk9y">Grote Markt</a></li>
-            <li><a target="_blank" href="http://tiny.cc/ozqk9y">N70</a></li>
-            <li><a target="_blank" href="http://tiny.cc/hpqk9y">Podium achter de kerk</a></li>
-          </ol>
-          <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen" height="300px">
+          <div class="location__content">
+            <ol>
+              <li class="location__item">
+               <span>1</span>
+                <a target="_blank" href="http://tiny.cc/6jqk9y" class="location__place">
+                  Oud Atletiekplein
+                </a>
+              </li>
+              <li class="location__item">
+                <span>2</span>
+                <a target="_blank" href="https://bit.ly/2TaUds0" class="location__place">
+                  Speelplaats KA/BS De Bever
+                </a>
+              </li>
+              <li class="location__item">
+                <span>3</span>
+                <a target="_blank" href="https://bit.ly/2U3X59W" class="location__place">
+                  Donkvijverstraat
+                </a>
+              </li>
+              <li class="location__item">
+                <span>4</span>
+                <a target="_blank" href="http://tiny.cc/owqk9y" class="location__place">
+                  Diederik van Beverenlaan
+                </a>
+              </li>
+
+              <li class="location__item">
+                <span>5</span>
+                <a target="_blank" href="http://tiny.cc/9wqk9y" class="location__place">
+                 Yzerhand
+                </a>
+              </li>
+              <li class="location__item">
+               <span>6</span>
+                <a target="_blank" href="http://tiny.cc/qxqk9y" class="location__place">
+                  Vrasenestraat
+                </a>
+              </li>
+              <li class="location__item">
+                <span>7</span>
+                <a target="_blank" href="http://tiny.cc/zyqk9y" class="location__place">
+                  Warande
+                </a>
+              </li>
+              <li class="location__item">
+                <span>8</span>
+                <a target="_blank" href="http://tiny.cc/7yqk9y" class="location__place">
+                  Grote Markt
+                </a>
+              </li>
+              <li class="location__item">
+                <span>9</span>
+                <a target="_blank" href="http://tiny.cc/ozqk9y" class="location__place">
+                 N70
+                </a>
+              </li>
+              <li class="location__item">
+                <span>10</span>
+                <a target="_blank" href="http://tiny.cc/hpqk9y" class="location__place">
+                  Podium achter de kerk
+                </a>
+              </li>
+            </ol>
+            <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen" height="300px">
+          </div>
+
       </section>
 
     </main>

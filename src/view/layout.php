@@ -80,14 +80,14 @@
               <p class="hide ">Lineup</p>
             </a>
           </li>
-
           <li class="menu__item famNav">
             <a class="nav__item" href="<?php if($currentPage == 'fallback'){
                   echo '#';
                 }else{
                   echo 'index.php?page=fallback';
                 }
-              ?>">
+              ?>
+            ">
               <p class="hide">Familie</p>
             </a>
           </li>

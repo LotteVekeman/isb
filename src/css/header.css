@@ -113,21 +113,19 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &:hover {
+  /* &:hover {
     border-top: solid .25rem black;
-  }
-  
+  } */
 }
 
 .homeNav {
   background-image: url(../assets/img/icon/home.png);
-  
+
   grid-area: home;
-  
+
   @media (--md) {
     display: none;
   }
- 
 }
 
 .lineupNav {
@@ -156,7 +154,7 @@
   }
 }
 
-.famNav{
+.famNav {
   grid-area: fam;
 }
 
