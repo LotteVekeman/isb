@@ -77,11 +77,11 @@
       </section>
 
       <section class="resultHeader">
-        <header>
+        <header class="filter__results-header">
           <h2 class="filter__results-title"><?php echo count($results);?> Resultaten</h2>
           <a href="./assets/programma.pdf">
-              <p>download</p>
-              <!-- <img src="./assets/img/icon/download.png" alt="download icoontje"> -->
+              <!-- <p class="download" >download</p> -->
+              <img src="./assets/img/icon/download.png" alt="download icoontje" class="download">
           </a>
         </header>
 
