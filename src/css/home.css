@@ -210,11 +210,9 @@ sup {
 
 .edition__movie {
   margin-left: 25%;
-
-  border: .2 solid var(--neonCarrot);
-  border-radius: .2;
-
   margin-bottom: 3rem;
+
+  height: 30rem;
 }
 
 .slider {

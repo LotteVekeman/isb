@@ -39,33 +39,6 @@ body {
   grid-area: content;
 }
 
-.pageHeader {
-  margin-bottom: 6rem;
-  margin-top: -10rem;
-  z-index: auto;
-
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  &::after {
-    height: 5rem;
-    width: 100%;
-    /* display: block; */
-    background: white;
-
-    border-right: solid 1rem white;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    content: '';
-
-    margin-top: -.5rem;
-  }
-}
-
 .pageHeader-image {
   @media (--md) {
     margin-top: -3rem;
@@ -98,10 +71,6 @@ body {
 .hidden {
   display: none;
 }
-
-
-
-
 
 .gradient2 {
   max-width: 100%;
@@ -157,9 +126,6 @@ body {
 .market {
   grid-area: market;
 }
-
-
-
 
 .btn {
   text-decoration: none;

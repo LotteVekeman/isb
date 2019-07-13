@@ -1,56 +1,12 @@
-   <main role="overzichtpagina">
-      <section class="pageHeader">
-        <header class="lineup__header">
-          <h1>Lineup</h1>
-          <p class="namesIntro ">Het programma is onderhevig aan (weers)omstandigheden</p>
-        </header>
-        <form role="form" action="index.php?page=lineup" class="days">
+   <main>
+      <section class="lineup__filter-bg">
+        <h1 class="lineup__title">Lineup</h1>
+        <form action="index.php?page=lineup" class="lineup__form">
           <input type="hidden" name="page" value="lineup" />
           <input type="hidden" name="action" value="filter" />
-          <p class="filter__label">Kies een dag:</p>
-          <div role="kies dag" aria-current="vrijdag" class="chooseDay">
-            <input
-              type="radio"
-              id="switch_friday"
-              name="day"
-              value="1"
-              <?php
-                if($currentDay == 1){
-                  echo 'checked';
-                }
-              ?>
-            />
-            <label class="filter__input-fri" for="switch_friday">
-              <p class="inputHide">vrijdag</p>
-            </label>
-            <input role="keuze zaterdag"
-              type="radio"
-              id="switch_saturday"
-              name="day"
-              value="2"
-              <?php
-                if($currentDay == 2){
-                  echo 'checked';
-                }
-              ?>
-            />
-            <label class="filter__input-sat" for="switch_saturday"><p class="inputHide">zaterdag</p></label>
-            <input role="keuze zondag"
-              type="radio"
-              id="switch_sunday"
-              name="day"
-              value="3"
-              <?php
-                if($currentDay == 3){
-                  echo 'checked';
-                }
-              ?>
-            />
-            <label class="filter__input-sun" for="switch_sunday"><p class="inputHide">zondag</p></label>
-          </div>
-          <p role="kies event" aria-current="voorstelling" class="filter__label">Kies een soort act:</p>
+          <p class="filter__label">Kies act:</p>
           <div class="chooseEvent">
-            <input role="keuze voorstelling"
+            <input
               type="radio"
               id="switch_left"
               name="event"
@@ -75,12 +31,60 @@
             />
             <label class="filter__input-street" for="switch_right">Straatattractie</label>
           </div>
-         <input role="button filter" class="filter__btn" type="submit" value="filter"></input>
+          <p class="filter__label">Kies dag:</p>
+          <div class="chooseDay">
+            <input
+              type="radio"
+              id="switch_friday"
+              name="day"
+              value="1"
+              <?php
+                if($currentDay == 1){
+                  echo 'checked';
+                }
+              ?>
+            />
+            <label for="switch_friday">
+              <p>vrijdag</p>
+            </label>
+            <input
+              type="radio"
+              id="switch_saturday"
+              name="day"
+              value="2"
+              <?php
+                if($currentDay == 2){
+                  echo 'checked';
+                }
+              ?>
+            />
+            <label for="switch_saturday"><p>zaterdag</p></label>
+            <input
+              type="radio"
+              id="switch_sunday"
+              name="day"
+              value="3"
+              <?php
+                if($currentDay == 3){
+                  echo 'checked';
+                }
+              ?>
+            />
+            <label for="switch_sunday"><p>zondag</p></label>
+          </div>
+         <input class="btn filter__btn" type="submit" value="filter toepassen"></input>
         </form>
       </section>
 
-      <section role="results"class="resultHeader">
-        <h2><?php echo count($results);?> Resultaten</h2>
+      <section class="resultHeader">
+        <header>
+          <h2 class="filter__results-title"><?php echo count($results);?> Resultaten</h2>
+          <a href="./assets/programma.pdf">
+              <p>download</p>
+              <!-- <img src="./assets/img/icon/download.png" alt="download icoontje"> -->
+          </a>
+        </header>
+
         <ul class="filter__result-list">
           <?php foreach($results as $result): ?>
 
