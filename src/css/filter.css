@@ -102,10 +102,21 @@
   padding: 4rem;
   overflow: hidden;
 
-  display: flex;
-  justify-content: center;
-
   margin-top: -5rem;
+
+  @media (--sm) {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (--md) {
+    padding: 4rem;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .chooseEvent input {
@@ -141,6 +152,15 @@
   &:hover {
     cursor: pointer;
     background-color: #fdf7f7;
+  }
+
+  @media (--sm) {
+    margin-top: 2rem;
+    margin-left: -5rem;
+    width: 20rem;
+  }
+
+  @media (--md) {
   }
 }
 
