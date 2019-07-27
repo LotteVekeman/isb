@@ -14,7 +14,6 @@
 
 .lineup__form {
   width: 90vw;
-  margin-left: 4rem;
 
   display: flex;
   flex-direction: column;
@@ -22,7 +21,11 @@
 
   padding-bottom: 6rem;
 
-  border-bottom: 4rem solid var(--wildBlueYonder);
+  /* border-bottom: 4rem solid var(--wildBlueYonder); */
+
+  @media (--lg) {
+    margin-left: 4rem;
+  }
 }
 
 .chooseDay {
@@ -201,7 +204,7 @@
 .resultHeader {
   margin-top: -15rem;
   margin-bottom: 5rem;
-  padding-left: 4rem;
+
   z-index: auto;
 
   width: 100%;
@@ -210,9 +213,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; */
+  @media (--md) {
+    padding-left: 7rem;
+  }
 
   @media (--lg) {
     justify-content: space-between;
+    padding-left: 4rem;
   }
 }
 
@@ -226,6 +233,7 @@
 
   @media (--md) {
     grid-template-columns: repeat(2, 1fr);
+    width: 90%;
   }
 
   @media (--lg) {

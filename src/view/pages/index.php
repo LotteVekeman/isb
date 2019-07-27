@@ -1,7 +1,50 @@
 <main>
       <header>
         <h1 class="hidden">International TheaterFestival Beveren</h1>
-        <img class="home__header-img" src="assets/img/headerimg.png" alt="abstract beeld met meer info over het festival" />
+        <picture class="home__header-img" >
+          <source
+                type="image/webp"
+                media="(min-width: 1440px)"
+                srcset="assets/img/header/headerimg@1,5.webp 1x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 1024px)"
+                srcset="assets/img/header/headerimg.webp 1x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 768px)"
+                srcset="assets/img/header/headerimg@0,75.webp 1x"
+              />
+              <source
+                type="image/webp"
+                media="(min-width: 320px)"
+                srcset="assets/img/header/headerimg@0,5.webp 1x"
+              />
+          <source
+                type="image/png"
+                media="(min-width: 1440px)"
+                srcset="assets/img/header/headerimg@1,5.png 1x"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 1024px)"
+                srcset="assets/img/header/headerimg.png 1x"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 768px)"
+                srcset="assets/img/header/headerimg@0,75.png 1x"
+              />
+              <source
+                type="image/png"
+                media="(min-width: 320px)"
+                srcset="assets/img/header/headerimg@0,5.png 1x"
+              />
+              <img src="assets/img/header/headerimg.png" alt="abstract beeld met meer info over het festival" />
+        </picture>
+
       </header>
       <section class="pageLayout">
         <header class="pageLayout__header">
@@ -74,7 +117,7 @@
             </a>
           </li>
         </ul>
-        <a class="btn" href="index.php?page=lineup">Ontdek lineup</a>
+        <a class="btn btn__discover" href="index.php?page=lineup">Ontdek lineup</a>
       </section>
 
       <section class="pageLayout">
@@ -88,12 +131,12 @@
             <h3 class="aangenaam__list-item-title">De hele familie</h3>
             <p class="aangenaam__list-item-text">
               Ons festival biedt een ruime keuze aan acts en voorstellingen. Wat zeker een must is, is ook de familiedag die
-              plaats vindt op zaterdag. Neem het hele gezin mee naar deze dag en laat  uw ogen uitkijken.U zult genieten, neem het van ons aan!
+              plaats vindt op zaterdag. Neem het hele gezin mee naar deze dag en laat  uw ogen uitkijken. U zult genieten, neem het van ons aan!
             </p>
           </article>
           <article class="aangenaam__list-item">
             <img src="assets/img/icon/iconActs.png" alt="clown in ruiten en bollen" width="150px">
-              <h3 class="aangenaam__list-item-title">>50 acts</h3>
+              <h3 class="aangenaam__list-item-title change">>50 acts</h3>
               <p class="aangenaam__list-item-text">
                 Het Internationaal Straattheaterfestival heeft heel wat te bieden. Laat je meeslepen door de talloze verscheidenheid van onze 50 acts.
                 Voor ieder wat wils tijdens deze 3 dagen.
@@ -139,76 +182,35 @@
         </header>
 
         <ul class="slider">
-          <li class="item olympic">
+          <li class="item2 olympic">
             <a target="_blank" href="https://www.beveren.be/olympischestraat">
-                <div class="infoGradient">
-                  </div>
-                  <div class="gradient2">
-                    <picture>
-                      <source
-                        type="image/webp"
-                        media="(min-width: 0px)"
-                        srcset="assets/img/andereActiviteiten/olympischeStraat.webp 1x"
-                      />
-
-                      <source
-                        type="image/jpg"
-                        media="(min-width: 0px)"
-                        srcset="assets/img/andereActiviteiten/olympischeStraat.jpg 1x"
-                      />
-                      <img class="top" src="assets/img/andereActiviteiten/olympischeStraat.jpg" alt="2 turnsters op een trampoline" />
-                    </picture>
-                    <h3>Olympische straat</h3>
-                  </div>
+              <div class="extra__slider-item-text">
+                <h3 class="extra__slider-item-title">Olympische straat</h3>
+              </div>
+              <img class="item__photo" src="assets/img/andereActiviteiten/olympischeStraat.jpg" alt="2 turnsters op een trampoline" />
             </a>
           </li>
           <li class="item eve">
             <a href="index.php?page=fallback">
             <div class="gradient2">
-              <picture>
-                      <source
-                        type="image/webp"
-                        media="(min-width: 0px)"
-                        srcset="assets/img/andereActiviteiten/avondmarkt.webp 1x"
-                      />
-
-                      <source
-                        type="image/jpg"
-                        media="(min-width: 0px)"
-                        srcset="assets/img/andereActiviteiten/avondmarkt.jpg 1x"
-                      />
-                      <img class="top" src="assets/img/andereActiviteiten/avondmarkt.jpg" alt="menigte aan kraampjes" />
-              </picture>
               <h3>Avondmarkt</h3>
+              <img class="top" src="assets/img/andereActiviteiten/avondmarkt.jpg" alt="menigte aan kraampjes" />
             </div>
             </a>
           </li>
           <li class="item crazy">
             <a href="index.php?page=detail&id=2">
               <div class="gradient2">
-                <picture>
-                  <source
-                    type="image/webp"
-                    media="(min-width: 0px)"
-                    srcset="assets/img/andereActiviteiten/gekkefietsencircuit.webp 1x"
-                      />
-
-                  <source
-                    type="image/jpg"
-                    media="(min-width: 0px)"
-                    srcset="assets/img/andereActiviteiten/gekkefietsencircuit.jpg 1x"
-                  />
-                  <img class="top" src="assets/img/andereActiviteiten/gekkefietsencircuit.jpg" alt="scouts bij een parcours" />
-                </picture>
-                <h3>Gekkefietsencircuit</h3>
+                <h3 class="">Gekkefietsencircuit</h3>
+                 <img class="top" src="assets/img/andereActiviteiten/gekkefietsencircuit.jpg" alt="scouts bij een parcours" />
               </div>
             </a>
           </li>
           <li class="item market">
             <a href="index.php?page=fallback">
                 <div class="gradient2">
-                  <img class="top" src="assets/img/andereActiviteiten/rommelmarkt.jpg" alt="mensen op een rommelmarkt" />
                   <h3>Rommelmarkt</h3>
+                  <img class="top" src="assets/img/andereActiviteiten/rommelmarkt.jpg" alt="mensen op een rommelmarkt" />
                 </div>
             </a>
           </li>
@@ -284,7 +286,30 @@
                 </a>
               </li>
             </ol>
-            <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen" height="300px">
+            <picture>
+            <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="assets/img/map.webp 1x"
+              />
+              <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="assets/img/map@0,5.webp 1x"
+              />
+              <source
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  srcset="assets/img/map.png 1x"
+              />
+              <source
+                  type="image/png"
+                  media="(min-width: 320px)"
+                  srcset="assets/img/map@0,5.png 1x"
+              />
+              <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen">
+            </picture>
+
           </div>
       </section>
 

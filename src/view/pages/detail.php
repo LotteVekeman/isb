@@ -1,7 +1,50 @@
   <main>
       <div class="detailbg">
         <header>
-          <img src="./assets/img/headerdetail.png" alt="abstract beeld met emma en tekst artiest ">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="assets/img/header/headerdetail@1,5.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 1024px)"
+              srcset="assets/img/header/headerdetail.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="assets/img/header/headerdetail@0,75.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 320px)"
+              srcset="assets/img/header/headerdetail@0,5.webp 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 1440px)"
+              srcset="assets/img/header/headerdetail@1,5.png 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 1024px)"
+              srcset="assets/img/header/headerdetail.png 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 768px)"
+              srcset="assets/img/header/headerdetail@0,75.png 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 320px)"
+              srcset="assets/img/header/headerdetail@0,5.png 1x"
+            />
+            <img src="./assets/img/header/headerdetail.png" alt="abstract beeld met emma en tekst artiest ">
+          </picture>
+
           <a class="back" href="index.php?page=lineup">
             <p>keer terug naar overzicht</p>
           </a>
