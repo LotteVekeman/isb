@@ -15,7 +15,7 @@ footer {
   justify-content: center;
 
   @media (--sm) {
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 10rem;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       'festival switch'
@@ -88,7 +88,7 @@ footer {
 }
 
 .sponsors {
-  background-color:white;
+  background-color: white;
 
   padding-top: 2rem;
   text-align: center;
@@ -150,6 +150,14 @@ footer {
 
   padding: 2rem;
   line-height: 2.4;
+
+  @media (--sm) {
+    margin-bottom: 4rem;
+  }
+
+  @media (--md) {
+    margin-bottom: -4rem;
+  }
 }
 
 .round {
