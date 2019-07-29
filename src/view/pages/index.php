@@ -39,7 +39,7 @@
               />
               <source
                 type="image/png"
-                media="(min-width: 320px)"
+                media="(min-width: 0px)"
                 srcset="assets/img/header/headerimg@0,5.png 1x"
               />
               <img src="assets/img/header/headerimg.png" alt="abstract beeld met meer info over het festival" />
@@ -146,7 +146,7 @@
             <img src="assets/img/icon/iconLand.png" alt="wereldbol in ruiten en bollen" width="150px">
             <h3 class="aangenaam__list-item-title">8 landen</h3>
             <p class="aangenaam__list-item-text">
-             Het is een internationaal feest waar vele landeneen deel uitmaken. Zo komen er artiesten van België, Nederland, Frankrijk, Duitsland,
+             Het is een internationaal feest waar vele landen een deel uitmaken. Zo komen er artiesten van België, Nederland, Frankrijk, Duitsland,
             Italië, Groot-Brittannië, Spanje. Maar ook uit andere delen van de wereld zoals Argentinië, Canada en Guatemala.
           </p>
           </article>

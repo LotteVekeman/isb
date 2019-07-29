@@ -39,7 +39,7 @@
             />
             <source
               type="image/png"
-              media="(min-width: 320px)"
+              media="(min-width: 0px)"
               srcset="assets/img/header/headerdetail@0,5.png 1x"
             />
             <img src="./assets/img/header/headerdetail.png" alt="abstract beeld met emma en tekst artiest ">
@@ -160,7 +160,30 @@
                 </a>
               </li>
             </ol>
-            <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen" height="300px">
+            <picture>
+            <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="assets/img/map/map.webp 1x"
+              />
+              <source
+                  type="image/webp"
+                  media="(min-width: 320px)"
+                  srcset="assets/img/map/map@0,5.webp 1x"
+              />
+              <source
+                  type="image/png"
+                  media="(min-width: 768px)"
+                  srcset="assets/img/map/map.png 1x"
+              />
+              <source
+                  type="image/png"
+                  media="(min-width: 320px)"
+                  srcset="assets/img/map/map@0,5.png 1x"
+              />
+              <img src="assets/img/map/map.png" alt="kaart met locaties van voorstellingen">
+            </picture>
+
           </div>
       </section>
 

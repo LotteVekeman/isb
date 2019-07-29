@@ -5,7 +5,7 @@
           <input type="hidden" name="page" value="lineup" />
           <input type="hidden" name="action" value="filter" />
           <p class="filter__label">Kies act:</p>
-          <div class="chooseEvent">
+          <div class="chooseOption">
             <input
               type="radio"
               id="switch_left"
@@ -17,7 +17,7 @@
                 }
               ?>
             />
-            <label class="filter__input-per" for="switch_left">Voorstelling</label>
+            <label class="filter_input filter__input-type" for="switch_left">Voorstelling</label>
             <input role="keuze straatattractie"
               type="radio"
               id="switch_right"
@@ -29,10 +29,10 @@
                 }
               ?>
             />
-            <label class="filter__input-street" for="switch_right">Straatattractie</label>
+            <label class="filter_input filter__input-type" for="switch_right">Straatattractie</label>
           </div>
           <p class="filter__label">Kies dag:</p>
-          <div class="chooseDay">
+          <div class="chooseOption">
             <input
               type="radio"
               id="switch_friday"
@@ -44,7 +44,7 @@
                 }
               ?>
             />
-            <label for="switch_friday">
+            <label class="filter_input filter__input-day"" for="switch_friday">
               <p>vrijdag</p>
             </label>
             <input
@@ -58,7 +58,7 @@
                 }
               ?>
             />
-            <label for="switch_saturday"><p>zaterdag</p></label>
+            <label class="filter_input filter__input-day" for="switch_saturday"><p>zaterdag</p></label>
             <input
               type="radio"
               id="switch_sunday"
@@ -70,7 +70,7 @@
                 }
               ?>
             />
-            <label for="switch_sunday"><p>zondag</p></label>
+            <label class="filter_input filter__input-day"" for="switch_sunday"><p>zondag</p></label>
           </div>
          <input class="btn filter__btn" type="submit" value="filter toepassen"></input>
         </form>

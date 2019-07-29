@@ -3,6 +3,10 @@
   justify-content: flex-end;
   margin-top: 1rem;
   margin-bottom: 2rem;
+
+  @media (--lg) {
+    margin-right: 5rem;
+  }
 }
 
 .chooseLanguage input {
@@ -42,6 +46,11 @@
 .nav {
   @media (--md) {
     display: flex;
+    margin: 0 auto;
+  }
+
+  @media (--lg) {
+    margin-right: 5rem;
   }
 }
 
@@ -156,6 +165,8 @@
 
 .famNav {
   grid-area: fam;
+  background-image: url(../assets/img/icon/child.png);
+  background-position: center;
 }
 
 .prakNav {
