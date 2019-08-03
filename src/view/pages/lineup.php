@@ -1,83 +1,36 @@
-   <main>
-      <section class="lineup__filter-bg">
-        <h1 class="lineup__title">Lineup</h1>
+<main>
+      <section>
+        <h1>Lineup</h1>
         <form action="index.php?page=lineup" class="lineup__form">
           <input type="hidden" name="page" value="lineup" />
           <input type="hidden" name="action" value="filter" />
+
           <p class="filter__label">Kies act:</p>
-          <div class="chooseOption">
-            <input
-              type="radio"
-              id="switch_left"
-              name="event"
-              value="voorstelling"
-              <?php
-                if($currentEvent == 'voorstelling'){
-                  echo 'checked';
-                }
-              ?>
-            />
-            <label class="filter_input filter__input-type" for="switch_left">Voorstelling</label>
-            <input role="keuze straatattractie"
-              type="radio"
-              id="switch_right"
-              name="event"
-              value="straatattractie"
-              <?php
-                if($currentEvent == 'straatattractie'){
-                  echo 'checked';
-                }
-              ?>
-            />
-            <label class="filter_input filter__input-type" for="switch_right">Straatattractie</label>
+          <div>
+            <input type="checkbox" id="switch_left" name="chooseAct[]" value="voorstelling"/>
+            <label for="switch_left">Voorstelling</label>
+            <input type="checkbox" id="switch_right" name="chooseAct[]" value="straatattractie"/>
+            <label for="switch_right">Straatattractie</label>
           </div>
+
           <p class="filter__label">Kies dag:</p>
           <div class="chooseOption">
-            <input
-              type="radio"
-              id="switch_friday"
-              name="day"
-              value="1"
-              <?php
-                if($currentDay == 1){
-                  echo 'checked';
-                }
-              ?>
-            />
-            <label class="filter_input filter__input-day"" for="switch_friday">
-              <p>vrijdag</p>
-            </label>
-            <input
-              type="radio"
-              id="switch_saturday"
-              name="day"
-              value="2"
-              <?php
-                if($currentDay == 2){
-                  echo 'checked';
-                }
-              ?>
-            />
-            <label class="filter_input filter__input-day" for="switch_saturday"><p>zaterdag</p></label>
-            <input
-              type="radio"
-              id="switch_sunday"
-              name="day"
-              value="3"
-              <?php
-                if($currentDay == 3){
-                  echo 'checked';
-                }
-              ?>
-            />
-            <label class="filter_input filter__input-day"" for="switch_sunday"><p>zondag</p></label>
+            <input type="checkbox" id="switch_friday" name="chooseDay[]" value="1"/>
+            <label for="switch_friday"><p>vrijdag</p></label>
+
+            <input type="checkbox" id="switch_saturday" name="chooseDay[]" value="2"/>
+            <label for="switch_saturday"><p>zaterdag</p></label>
+
+            <input type="checkbox" id="switch_sunday" name="chooseDay[]" value="3"/>
+            <label for="switch_sunday"><p>zondag</p></label>
           </div>
-         <input class="btn filter__btn" type="submit" value="filter toepassen"></input>
+
+         <input type="submit" value="filter toepassen"></input>
         </form>
       </section>
 
-      <section class="resultHeader">
-        <header class="filter__results-header">
+      <section>
+        <header>
           <h2 class="filter__results-title"><?php echo count($results);?> Resultaten</h2>
           <a href="./assets/programma.pdf">
               <!-- <p class="download" >download</p> -->
@@ -122,4 +75,5 @@
           <?php endforeach; ?>
         </ul>
       </section>
+
     </main>

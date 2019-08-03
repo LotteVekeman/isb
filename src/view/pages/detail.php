@@ -39,7 +39,7 @@
             />
             <source
               type="image/png"
-              media="(min-width: 0px)"
+              media="(min-width: 320px)"
               srcset="assets/img/header/headerdetail@0,5.png 1x"
             />
             <img src="./assets/img/header/headerdetail.png" alt="abstract beeld met emma en tekst artiest ">

@@ -1,47 +1,47 @@
 <main>
       <header>
         <h1 class="hidden">International TheaterFestival Beveren</h1>
-        <picture class="home__header-img" >
-          <source
-                type="image/webp"
-                media="(min-width: 1440px)"
-                srcset="assets/img/header/headerimg@1,5.webp 1x"
-              />
-              <source
-                type="image/webp"
-                media="(min-width: 1024px)"
-                srcset="assets/img/header/headerimg.webp 1x"
-              />
-              <source
-                type="image/webp"
-                media="(min-width: 768px)"
-                srcset="assets/img/header/headerimg@0,75.webp 1x"
-              />
-              <source
-                type="image/webp"
-                media="(min-width: 320px)"
-                srcset="assets/img/header/headerimg@0,5.webp 1x"
-              />
-          <source
-                type="image/png"
-                media="(min-width: 1440px)"
-                srcset="assets/img/header/headerimg@1,5.png 1x"
-              />
-              <source
-                type="image/png"
-                media="(min-width: 1024px)"
-                srcset="assets/img/header/headerimg.png 1x"
-              />
-              <source
-                type="image/png"
-                media="(min-width: 768px)"
-                srcset="assets/img/header/headerimg@0,75.png 1x"
-              />
-              <source
-                type="image/png"
-                media="(min-width: 0px)"
-                srcset="assets/img/header/headerimg@0,5.png 1x"
-              />
+        <picture >
+        <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="assets/img/header/headerimg@1,5.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 1024px)"
+              srcset="assets/img/header/headerimg.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="assets/img/header/headerimg@0,75.webp 1x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 320px)"
+              srcset="assets/img/header/headerimg@0,5.webp 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 1440px)"
+              srcset="assets/img/header/headerimg@1,5.png 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 1024px)"
+              srcset="assets/img/header/headerimg.png 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 768px)"
+              srcset="assets/img/header/headerimg@0,75.png 1x"
+            />
+            <source
+              type="image/png"
+              media="(min-width: 320px)"
+              srcset="assets/img/header/headerimg@0,5.png 1x"
+            />
               <img src="assets/img/header/headerimg.png" alt="abstract beeld met meer info over het festival" />
         </picture>
 
@@ -286,7 +286,7 @@
                 </a>
               </li>
             </ol>
-            <picture>
+            <!-- <picture>
             <source
                   type="image/webp"
                   media="(min-width: 768px)"
@@ -308,7 +308,7 @@
                   srcset="assets/img/map@0,5.png 1x"
               />
               <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen">
-            </picture>
+            </picture> -->
 
           </div>
       </section>

@@ -199,7 +199,7 @@
 
   @media (--xs) {
     content: '';
-    /* display: none; */
+    display: none;
   }
 
   @media (--md) {
@@ -209,7 +209,6 @@
 
 .current {
   @media (--xs) {
-    /* background-color: var(--aqua); */
     border-top: solid .2rem white;
   }
 
@@ -220,7 +219,7 @@
 }
 
 .notCurrent {
-  @media (--xs) {
+  /* @media (--xs) {
     filter: grayscale(80%);
-  }
+  } */
 }

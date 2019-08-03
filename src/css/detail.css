@@ -91,9 +91,9 @@
 
   margin: 0 auto;
 
-  @media (--xs) {
+  /* @media (--xs) {
     width: 100%;
-  }
+  } */
 
   @media (--sm) {
     height: 30rem;
@@ -155,10 +155,10 @@
 }
 
 .act__detail__infoList {
-  @media (--xs) {
+  /* @media (--xs) {
     grid-area: infoList;
     margin-top: -3rem;
-  }
+  } */
 
   @media (min-width: 43.75em) {
     margin-left: -2rem;
@@ -231,11 +231,11 @@
 }
 
 .act__detail-others {
-  @media (--xs) {
+  /* @media (--xs) {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+  } */
 
   @media (--md) {
     width: 50vw;
