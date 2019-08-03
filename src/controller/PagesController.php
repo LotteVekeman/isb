@@ -20,34 +20,10 @@ public function lineup(){
   $this->set('title', 'lineup');
   $this->set('currentPage', 'lineup');
 
-  // if(!empty($_GET['action']) && $_GET['action'] == 'filter'){
-  //   $results = $this->filterDAO->search($_GET['days'], $_GET['acts']);
-  //   $this->set('days', $_GET['days']);
-  //   $this->set('acts', $_GET['acts']);
-  // }else{
-  //   $results = $this->filterDAO->search('', '');
-  //   $this->set('day', '');
-  //   $this->set('acts', '');
-  // }
-
-  // if(!empty($_GET['action']) && $_GET['action'] == 'filter'){
-  //   $results = $this->filterDAO->search($_GET['day'], $_GET['event']);
-  //   $this->set('currentDay', $_GET['day']);
-  //   $this->set('day', $_GET['day']);
-  //   $this->set('currentEvent', $_GET['event']);
-  //   $this->set('event', $_GET['event']);
-  // }else{
-  //   $results = $this->filterDAO->search('', '');
-  //   $this->set('day', '1');
-  //   $this->set('currentDay', '1');
-  //   $this->set('event', '');
-  //   $this->set('currentEvent', 'voorstelling');
-  //  }
-
    if(!empty($_GET['action']) && $_GET['action'] == 'filter'){
     $results = $this->filterDAO->search($_GET['chooseAct'], $_GET['chooseDay']);
     $this->set('act', $_GET['chooseAct']);
-    $this->set('currentEvent', $_GET['chooseAct']);
+    $this->set('currentAct', $_GET['chooseAct']);
     $this->set('day', $_GET['chooseDay']);
     $this->set('currentDay', $_GET['chooseDay']);
   }else{
