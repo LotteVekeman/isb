@@ -29,9 +29,10 @@ public function lineup(){
   }else{
     $results = $this->filterDAO->search('', '');
     $this->set('act', '');
-    $this->set('currentEvent', '');
+    $this->set('currentAct', '');
     $this->set('day', '');
     $this->set('currentDay', '');
+
    }
   $this->set('results', $results);
 }

@@ -22,7 +22,7 @@ class FilterDAO extends DAO {
     foreach($day as $k => $day){
       $stmt->bindValue(':day', $day);
     }
-    foreach($act as $k => $act){
+    foreach($act as $key => $act){
       $stmt->bindValue(':act', $act);
     }
     $stmt->execute();
