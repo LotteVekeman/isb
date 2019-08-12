@@ -20,9 +20,9 @@ class Controller {
     $this->set('css', '');
     if ($this->env == 'production') {
       // regular script in production
-      $this->set('js', '<script src="script.ef9d70ef1161f2c20792.js"></script>');
+      $this->set('js', '<script src="script.js"></script>');
        // regular css in production
-      $this->set('css', '<link href="style.ef9d70ef1161f2c20792.css" rel="stylesheet">');
+      $this->set('css', '<link href="style.css" rel="stylesheet">');
     }
     $this->createViewVarWithContent();
     $this->renderInLayout();

@@ -42,7 +42,7 @@
               media="(min-width: 320px)"
               srcset="assets/img/header/headerimg@0,5.png 1x"
             />
-              <img src="assets/img/header/headerimg.png" alt="abstract beeld met meer info over het festival" />
+            <img src="assets/img/header/headerimg.png" alt="abstract beeld met meer info over het festival" />
         </picture>
 
       </header>
@@ -163,7 +163,7 @@
               Like en sharen mag altijd!
            </p>
           </header>
-          <iframe class="edition__movie" width="500" height="250"
+          <iframe class="edition__movie" width="500" height="300"
             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstraattheaterfestivalbeveren%2Fvideos%2F2143405049271082%2F&show_text=0&width=560"
             scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true">
           </iframe>
@@ -286,10 +286,10 @@
                 </a>
               </li>
             </ol>
-            <!-- <picture>
+            <picture>
             <source
                   type="image/webp"
-                  media="(min-width: 768px)"
+                  media="(min-width: 1440px)"
                   srcset="assets/img/map.webp 1x"
               />
               <source
@@ -299,7 +299,7 @@
               />
               <source
                   type="image/png"
-                  media="(min-width: 768px)"
+                  media="(min-width: 1440px)"
                   srcset="assets/img/map.png 1x"
               />
               <source
@@ -308,7 +308,7 @@
                   srcset="assets/img/map@0,5.png 1x"
               />
               <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen">
-            </picture> -->
+            </picture>
 
           </div>
       </section>

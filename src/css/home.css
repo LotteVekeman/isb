@@ -55,13 +55,9 @@
     overflow: scroll;
 
     grid-template-areas: 'one two three';
-  }
 
-  /* @media (--lg) {
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(1, 1fr);
-      grid-template-areas: 'one two three';
-    } */
+    margin-bottom: -1rem;
+  }
 }
 
 .first {
@@ -285,16 +281,12 @@ sup {
 
   @media (max-width: 47em) {
     width: 100%;
-    margin-bottom: -10rem;
+    margin-bottom: -15rem;
     margin-right: .5rem;
   }
 
   @media (--md) {
-    height: 25rem;
-    widht: 50rem;
-
-    margin-left: 15%;
-    margin-bottom: 10rem;
+    margin-left: 20%;
   }
 
   @media (--lg) {

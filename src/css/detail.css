@@ -101,7 +101,7 @@
 
   @media (--md) {
     width: auto;
-    height: 50rem;
+    height: 40rem;
   }
 }
 
@@ -248,8 +248,4 @@
   @media (--xl) {
     width: 60vw;
   }
-}
-
-.highlight {
-  background-image: linear-gradient(white 55%, #d2b8db 15%);
 }

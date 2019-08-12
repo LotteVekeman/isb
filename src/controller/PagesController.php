@@ -27,11 +27,11 @@ public function lineup(){
     $this->set('day', $_GET['chooseDay']);
     $this->set('currentDay', $_GET['chooseDay']);
   }else{
-    $results = $this->filterDAO->search('', '');
-    $this->set('act', '');
-    $this->set('currentAct', '');
-    $this->set('day', '');
-    $this->set('currentDay', '');
+    $results = $this->filterDAO->search(' ', ' ');
+    $this->set('act', ' ');
+    $this->set('currentAct', ' ');
+    $this->set('day', ' ');
+    $this->set('currentDay', ' ');
 
    }
   $this->set('results', $results);

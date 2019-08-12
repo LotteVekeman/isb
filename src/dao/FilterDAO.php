@@ -9,6 +9,14 @@ class FilterDAO extends DAO {
     $imploded_days= implode("','",$day);
     $imploded_types= implode("','",$act);
 
+    // if(isset($_POST['chooseDay'])){
+    //   $imploded_days= implode("','",$day);
+    // }
+    // if(isset($_POST['chooseAct'])){
+    //   $imploded_types= implode("','",$act);
+    // }
+
+
     $sql = "SELECT events .*, moments.location_id, moments.time, days.day, days.id as day_id
     FROM events
     INNER JOIN moments
@@ -18,6 +26,7 @@ class FilterDAO extends DAO {
     WHERE events.type IN ('" . $imploded_days . "') and days.id IN ('" . $imploded_types . "')
     ORDER BY moments.time ASC ";
 
+    //echo $sql;
     $stmt = $this->pdo->prepare($sql);
     foreach($day as $k => $day){
       $stmt->bindValue(':day', $day);
