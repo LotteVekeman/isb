@@ -31,7 +31,7 @@ class FilterDAO extends DAO {
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
-  public function selectById($id){
+  public function selectEventById($id){
     $sql = "SELECT events .*, moments.location_id, moments.time, days.day,
     locations.place, locations.link, days.id as day_id, moments.event_id
     FROM events
@@ -49,21 +49,21 @@ class FilterDAO extends DAO {
     return $stmt->fetch(PDO::FETCH_ASSOC);
   }
 
-  public function selectOthersById($id){
+  public function selectOtherEvents($nr1, $nr2, $nr3){
     $sql = "SELECT events .*, moments.location_id, moments.time, days.day,
     locations.place, locations.link, days.id as day_id, moments.event_id
     FROM events
-    INNER JOIN moments
-    ON events.id = moments.event_id
-    INNER JOIN days
-    ON moments.day_id = days.id
-    INNER JOIN locations
-    ON moments.location_id = locations.id
-    WHERE events.id != :id";
+    INNER JOIN moments ON events.id = moments.event_id
+    INNER JOIN days ON moments.day_id = days.id
+    INNER JOIN locations ON moments.location_id = locations.id
+    WHERE events.id = :nr1 OR events.id = :nr2 OR events.id = :nr3
+    GROUP BY events.id";
 
     $stmt = $this->pdo->prepare($sql);
-    $stmt->bindValue(':id', $id);
+    $stmt->bindValue(':nr1', $nr1);
+    $stmt->bindValue(':nr2', $nr2);
+    $stmt->bindValue(':nr3', $nr3);
     $stmt->execute();
-    return $stmt->fetch(PDO::FETCH_ASSOC);
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
   }
 }

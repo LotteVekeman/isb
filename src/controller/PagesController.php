@@ -42,17 +42,25 @@ public function lineup(){
 
 public function detail(){
 
-  if(!empty($_GET['id'])) {
-        $act = $this->filterDAO->selectById($_GET['id']);
+    if(!empty($_GET['id'])) {
+        $act = $this->filterDAO->selectEventById($_GET['id']);
         $this->set('act', $act);
+
       }else{
         header('Location: index.php');
         exit();
-      }
+    }
 
-      $this->set('currentPage','detail');
+    $nr1 = rand(1, 54);
+    $nr2 = rand(1, 54);
+    $nr3 = rand(1, 54);
+    $others = $this->filterDAO->selectOtherEvents($nr1, $nr2, $nr3);
 
-      $other = $this->filterDAO->selectOthersById($_GET['id']);
-      $this->set('other', $other);
+    $this->set('others', $others);
+
+      // $others = $this->filterDAO->selectOthersById($_GET['id']);
+      //$this->set('other', $other);
+
+    $this->set('currentPage','detail');
   }
 }

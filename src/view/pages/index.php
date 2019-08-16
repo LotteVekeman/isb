@@ -56,7 +56,7 @@
         </header>
 
         <ul class="kijkerList">
-          <li class="item first">
+          <li class="item">
             <a href="index.php?page=detail&id=51">
               <article>
                 <div class="kijker__act-info">
@@ -76,7 +76,7 @@
               </article>
             </a>
           </li>
-          <li class="item two">
+          <li class="item">
             <a href="index.php?page=detail&id=49">
             <article>
               <div class="kijker__act-info">
@@ -96,7 +96,7 @@
             </article>
             </a>
           </li>
-          <li class="item three">
+          <li class="item">
             <a href="index.php?page=detail&id=48">
             <article>
               <div class="kijker__act-info">
@@ -190,28 +190,31 @@
               <img class="item__photo" src="assets/img/andereActiviteiten/olympischeStraat.jpg" alt="2 turnsters op een trampoline" />
             </a>
           </li>
-          <li class="item eve">
-            <a href="index.php?page=fallback">
-            <div class="gradient2">
-              <h3>Avondmarkt</h3>
-              <img class="top" src="assets/img/andereActiviteiten/avondmarkt.jpg" alt="menigte aan kraampjes" />
-            </div>
-            </a>
-          </li>
-          <li class="item crazy">
-            <a href="index.php?page=detail&id=2">
-              <div class="gradient2">
-                <h3 class="">Gekkefietsencircuit</h3>
-                 <img class="top" src="assets/img/andereActiviteiten/gekkefietsencircuit.jpg" alt="scouts bij een parcours" />
+
+          <li class="item2 eve">
+            <a href="#">
+              <div class="extra__slider-item-text">
+                <h3 class="extra__slider-item-title">Avondmarkt</h3>
               </div>
+              <img class="item__photo" src="assets/img/andereActiviteiten/avondmarkt.jpg" alt="menigte aan kraampjes" />
             </a>
           </li>
-          <li class="item market">
-            <a href="index.php?page=fallback">
-                <div class="gradient2">
-                  <h3>Rommelmarkt</h3>
-                  <img class="top" src="assets/img/andereActiviteiten/rommelmarkt.jpg" alt="mensen op een rommelmarkt" />
+
+          <li class="item2 crazy">
+            <a href="#">
+              <div class="extra__slider-item-text">
+                <h3 class="extra__slider-item-title">Gekkefietsencircuit</h3>
+              </div>
+              <img class="item__photo" src="assets/img/andereActiviteiten/gekkefietsencircuit.jpg" alt="scouts bij een parcours" />
+            </a>
+          </li>
+
+          <li class="item2 market">
+            <a href="#">
+                <div class="extra__slider-item-text">
+                  <h3 class="extra__slider-item-title">Rommelmarkt</h3>
                 </div>
+                <img class="item__photo" src="assets/img/andereActiviteiten/rommelmarkt.jpg" alt="mensen op een rommelmarkt" />
             </a>
           </li>
         </ul>

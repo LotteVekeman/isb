@@ -188,15 +188,16 @@
       </section>
 
       <section class="act__detail-others">
-          <h2>Op dezelfde dag</h2>
-          <ul>
+          <h2>Ontdek meer</h2>
+          <ul class="kijkerList">
+          <?php foreach($others as $other):?>
             <li class="item">
-              <a class="kijkerLink" href="index.php?page=detail&amp;id=<?php echo $other['id'];?>">
+              <a href="index.php?page=detail&amp;id=<?php echo $other['id'];?>">
               <article>
-                <div class="infoGradient">
-                  <p class="dayLabel"><?php echo $other['time'];?></p>
-                  <div class="textLabel">x
-                    <h3>
+                <div class="kijker__act-info">
+                  <p class="kijker__act-typeLabel"><?php echo $other['type'];?></p>
+                  <div class="kijker__act-textLabel">
+                    <h3 class="kijker__act-textLabel-artist">
                     <?php
                       echo $other['artist'];?>
                       <sup>
@@ -205,18 +206,23 @@
                         }?>
                       </sup>
                     </h3>
-                    <p class="textLabel__name"><?php echo $other['name'];?></p>
+                    <p class="kijker__act-textLabel-place"><?php echo $other['place'];?></p>
+                    <div class="kijker__act-textLabel-time">
+                      <p class="kijker__act-textLabel-day"><?php echo $other['day'];?></p>
+                      <p><?php echo $other['time'];?></p>
+                    </div>
                   </div>
                 </div>
 
-                <div class="gradient">
-                  <img class="top"
+                <div class="kijker__act-img">
+                  <img
                       src="./assets/img/isb/<?php echo $other['day'];?>/<?php echo $other['type'];?>/<?php echo $other["imgpath"];?>.jpg"
                       alt="Foto van <?php echo $other['artist'];?>"/>
                 </div>
               </article>
               </a>
             </li>
+            <?php endforeach; ?>
           </ul>
       </section>
 
