@@ -42,7 +42,7 @@
               media="(min-width: 320px)"
               srcset="assets/img/header/headerimg@0,5.png 1x"
             />
-            <img src="assets/img/header/headerimg.png" alt="abstract beeld met meer info over het festival" />
+            <img src="assets/img/header/headerimg.png" alt="abstract beeld met meer info over het festival" width="100%"/>
         </picture>
 
       </header>
@@ -286,28 +286,28 @@
                 </a>
               </li>
             </ol>
-            <picture>
+           <picture>
             <source
                   type="image/webp"
-                  media="(min-width: 1440px)"
-                  srcset="assets/img/map.webp 1x"
+                  media="(min-width: 768px)"
+                  srcset="assets/img/map/map.webp 1x"
               />
               <source
                   type="image/webp"
                   media="(min-width: 320px)"
-                  srcset="assets/img/map@0,5.webp 1x"
+                  srcset="assets/img/map/map@0,5.webp 1x"
               />
               <source
                   type="image/png"
-                  media="(min-width: 1440px)"
-                  srcset="assets/img/map.png 1x"
+                  media="(min-width: 768px)"
+                  srcset="assets/img/map/map.png 1x"
               />
               <source
                   type="image/png"
                   media="(min-width: 320px)"
-                  srcset="assets/img/map@0,5.png 1x"
+                  srcset="assets/img/map/map@0,5.png 1x"
               />
-              <img src="assets/img/map.png" alt="kaart met locaties van voorstellingen">
+              <img src="assets/img/map/map.png" alt="kaart met locaties van voorstellingen">
             </picture>
 
           </div>

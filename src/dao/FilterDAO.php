@@ -6,35 +6,28 @@ class FilterDAO extends DAO {
 
   public function search($day, $act){
 
-    $imploded_days= implode("','",$day);
-    $imploded_types= implode("','",$act);
-
-    // if(isset($_POST['chooseDay'])){
-    //   $imploded_days= implode("','",$day);
-    // }
-    // if(isset($_POST['chooseAct'])){
-    //   $imploded_types= implode("','",$act);
-    // }
-
-
     $sql = "SELECT events .*, moments.location_id, moments.time, days.day, days.id as day_id
     FROM events
     INNER JOIN moments
     ON events.id = moments.event_id
     INNER JOIN days
     ON moments.day_id = days.id
-    WHERE events.type IN ('" . $imploded_days . "') and days.id IN ('" . $imploded_types . "')
-    ORDER BY moments.time ASC ";
+    WHERE 1";
 
-    //echo $sql;
+    $bindValues= array();
+
+    if (!empty($day)) {
+      $sql .= " AND days.day LIKE :day";
+      $bindValues[':day']=$day;
+    }
+    if (!empty($act)) {
+      $sql .= " AND events.type LIKE :act";
+      $bindValues[':act']=$act;
+    }
+
+    $sql .= " ORDER BY days.day, moments.time ASC";
     $stmt = $this->pdo->prepare($sql);
-    foreach($day as $k => $day){
-      $stmt->bindValue(':day', $day);
-    }
-    foreach($act as $key => $act){
-      $stmt->bindValue(':act', $act);
-    }
-    $stmt->execute();
+    $stmt->execute($bindValues);
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 

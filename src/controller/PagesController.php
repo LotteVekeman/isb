@@ -20,26 +20,24 @@ public function lineup(){
   $this->set('title', 'lineup');
   $this->set('currentPage', 'lineup');
 
-   if(!empty($_GET['action']) && $_GET['action'] == 'filter'){
-    $results = $this->filterDAO->search($_GET['chooseAct'], $_GET['chooseDay']);
-    $this->set('act', $_GET['chooseAct']);
-    $this->set('currentAct', $_GET['chooseAct']);
-    $this->set('day', $_GET['chooseDay']);
-    $this->set('currentDay', $_GET['chooseDay']);
-  }else{
-    $results = $this->filterDAO->search(' ', ' ');
-    $this->set('act', ' ');
-    $this->set('currentAct', ' ');
-    $this->set('day', ' ');
-    $this->set('currentDay', ' ');
+  if(empty($_GET['chooseAct'])) {
+    $act = '';
+  }
+  else {
+    $act = $_GET['chooseAct'];
+  }
 
-   }
-  $this->set('results', $results);
-}
+  if(empty($_GET['chooseDay'])) {
+    $day = '';
+  }
+  else {
+    $day = $_GET['chooseDay'];
+  }
+  $results = $this->filterDAO->search($day, $act);
 
-public function fallback(){
-  $this->set('title', 'fallback');
-  $this->set('currentPage', 'fallback');
+    $this->set('day', $day);
+    $this->set('act', $act);
+    $this->set('results', $results);
 }
 
 public function detail(){

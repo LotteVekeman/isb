@@ -15,12 +15,7 @@ $routes = array(
   'detail' => array(
     'controller' => 'Pages',
     'action' => 'detail'
-  ),
-  'fallback' => array(
-    'controller' => 'Pages',
-    'action' => 'fallback'
-  ),
-
+  )
 );
 
 if(empty($_GET['page'])) {

@@ -42,7 +42,7 @@
               media="(min-width: 320px)"
               srcset="assets/img/header/headerdetail@0,5.png 1x"
             />
-            <img src="./assets/img/header/headerdetail.png" alt="abstract beeld met emma en tekst artiest ">
+            <img src="./assets/img/header/headerdetail.png" alt="abstract beeld met emma en tekst artiest" width="100%">
           </picture>
 
           <a class="back" href="index.php?page=lineup">

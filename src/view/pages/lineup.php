@@ -7,54 +7,44 @@
 
           <p class="filter__label">Kies act:</p>
           <div class="chooseOption">
-            <input type="checkbox" id="switch_left" name="chooseAct[]" value="voorstelling"
-              <?php
-                if($currentAct == 'voorstelling'){
-                  echo 'checked';
-                }
-              ?>
+            <input type="radio" id="switch_left" name="chooseAct" value="voorstelling"
+            <?php if ($act == 'voorstelling' ) echo ' checked'; ?>
             />
             <label class="filter_input filter__input-type" for="switch_left">Voorstelling</label>
-            <input type="checkbox" id="switch_right" name="chooseAct[]" value="straatattractie"
-            <?php
-                if($currentAct == 'straatattractie'){
-                  echo 'checked';
-                }
-              ?>
+
+            <input type="radio" id="switch_right" name="chooseAct" value="straatattractie"
+            <?php if ($act == 'straatattractie' ) echo ' checked'; ?>
             />
             <label class="filter_input filter__input-type" for="switch_right">Straatattractie</label>
+
+             <input type="radio" id="switch_all" name= "chooseAct" value=""
+             <?php if ($act == '' ) echo ' checked'; ?>
+            />
+            <label class="filter_input filter__input-type" for="switch_all">Alle acts</label>
           </div>
 
           <p class="filter__label">Kies dag:</p>
           <div class="chooseOption">
-            <input type="checkbox" id="switch_friday" name="chooseDay[]" value="1"
-            <?php
-                if($currentDay == 1){
-                  echo 'checked';
-                }
-              ?>
+            <input type="radio" id="switch_friday" name="chooseDay" value="vrijdag"
+            <?php if ($day == 'vrijdag' ) echo ' checked'; ?>
             />
             <label class="filter_input filter__input-day" for="switch_friday"><p>vrijdag</p></label>
 
-            <input type="checkbox" id="switch_saturday" name="chooseDay[]" value="2"
-              <?php
-                  if($currentDay == 2){
-                    echo 'checked';
-                  }
-              ?>
+            <input type="radio" id="switch_saturday" name="chooseDay" value="zaterdag"
+            <?php if ($day == 'zaterdag' ) echo ' checked'; ?>
             />
             <label class="filter_input filter__input-day" for="switch_saturday"><p>zaterdag</p></label>
 
-            <input type="checkbox" id="switch_sunday" name="chooseDay[]" value="3"
-              <?php
-                  if($currentDay == 3){
-                    echo 'checked';
-                  }
-                ?>
+            <input type="radio" id="switch_sunday" name="chooseDay" value="zondag"
+            <?php if ($day == 'zondag' ) echo ' checked'; ?>
             />
             <label class="filter_input filter__input-day" for="switch_sunday"><p>zondag</p></label>
-          </div>
 
+            <input type="radio" id="switch_all1" name="chooseDay" value=""
+            <?php if ($day == '' ) echo ' checked'; ?>
+            />
+            <label class="filter_input filter__input-day" for="switch_all1"><p>Alle dagen</p></label>
+          </div>
          <input class="btn filter__btn" type="submit" value="filter toepassen"></input>
         </form>
       </section>
