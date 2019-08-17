@@ -8,34 +8,28 @@
     <link rel="icon" href="assets/img/favicon.png" />
     <title>ISB</title>
     <?php echo $css;?>
-    <link rel="icon" href="assets/img/icon.png" />
-    <script>
-      WebFontConfig = {
-        custom: {
-          families: ["D-DINCondensed", "D-DINCondensed-Bold"],
-          urls: ["assets/fonts/fonts.css"]
-        }
-      };
 
-      (function(d) {
-        var wf = d.createElement("script"),
-          s = d.scripts[0];
-        wf.src = "js/webfont.js";
-        wf.async = true;
-        s.parentNode.insertBefore(wf, s);
-      })(document);
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+      google: {
+        families: ['Source Sans Pro', 'Helvetica']
+      }
+    });
+  </script>
+    <link rel="icon" href="assets/img/icon.png" />
   </head>
 
   <body>
     <header>
-      <form action="index.php" class="language">
+      <form action="index.php" class="language" role="form">
           <div class="chooseLanguage">
             <input
               type="radio"
               id="switch_nl"
               name="language"
               value="Nederlands"
+              aria-describedby="current"
               checked
             />
             <label for="switch_nl">NL</label>
@@ -49,7 +43,7 @@
           </div>
       </form>
 
-      <nav class="nav">
+      <nav aria-label="site" class="nav">
         <a href="index.php">
           <img class="logo" src="assets/img/logo/beveren.png" alt="logo Beveren" width="200px"/>
         </a>
@@ -128,7 +122,8 @@
       </nav>
     </header>
 
-    <?php echo $content;?>
+
+    <main id="main"><?php echo $content;?></main>
 
     <footer>
       <section class="summary">

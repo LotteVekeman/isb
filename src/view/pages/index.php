@@ -1,4 +1,4 @@
-<main>
+
       <header>
         <h1 class="hidden">International TheaterFestival Beveren</h1>
         <picture >
@@ -167,9 +167,6 @@
             src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fstraattheaterfestivalbeveren%2Fvideos%2F2143405049271082%2F&show_text=0&width=560"
             scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true">
           </iframe>
-          <!-- <iframe class="memory__video" height="300"
-           src="https://www.youtube.com/embed/lrlscBtuSUM">
-          </iframe> -->
         </section>
       </div>
 
@@ -315,5 +312,3 @@
 
           </div>
       </section>
-
-    </main>

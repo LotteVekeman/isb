@@ -1,5 +1,4 @@
-  <main>
-      <div class="detailbg">
+  <div class="detailbg">
         <header>
           <picture>
             <source
@@ -183,11 +182,10 @@
               />
               <img src="assets/img/map/map.png" alt="kaart met locaties van voorstellingen">
             </picture>
-
           </div>
       </section>
 
-      <section class="act__detail-others">
+      <section class="pageLayout">
           <h2>Ontdek meer</h2>
           <ul class="kijkerList">
           <?php foreach($others as $other):?>
@@ -225,6 +223,4 @@
             <?php endforeach; ?>
           </ul>
       </section>
-
-    </main>
 

@@ -61,7 +61,6 @@
 
   @media (--lg) {
     display: flex;
-    /* justify-content: center; */
   }
 }
 
@@ -121,10 +120,6 @@
   border-top: solid .25rem transparent;
   background-repeat: no-repeat;
   background-position: center;
-
-  /* &:hover {
-    border-top: solid .25rem black;
-  } */
 }
 
 .homeNav {

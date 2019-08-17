@@ -123,8 +123,6 @@ body {
 }
 
 .item {
-  /* display: flex;
-  align-items: center; */
 
   &:hover {
     filter: grayscale(100%);
