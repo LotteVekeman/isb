@@ -17,6 +17,7 @@
       }
     });
   </script>
+
     <link rel="icon" href="assets/img/icon.png" />
   </head>
 
@@ -76,45 +77,23 @@
             </a>
           </li>
           <li class="menu__item famNav">
-            <a class="nav__item" href="<?php if($currentPage == 'fallback'){
-                  echo '#';
-                }else{
-                  echo 'index.php?page=fallback';
-                }
-              ?>
-            ">
+            <a class="nav__item" href="#">
               <p class="hide">Familie</p>
             </a>
           </li>
 
           <li class="menu__item switchNav">
-            <a class="nav__item" href="<?php if($currentPage == 'fallback'){
-                  echo '#';
-                }else{
-                  echo 'index.php?page=fallback';
-                }
-              ?>
-            ">
+            <a class="nav__item" href="#">
               <p class="hide">Raak betrokken</p>
             </a>
           </li>
           <li class="menu__item prakNav">
-            <a class="nav__item" href=" <?php if($currentPage == 'fallback'){
-                  echo '#';
-                }else{
-                  echo 'index.php?page=fallback';
-                }
-              ?>">
+            <a class="nav__item" href="#">
               <p class="hide">Praktisch</p>
             </a>
           </li>
           <li class="menu__item aboutNav">
-            <a class="nav__item" href="<?php if($currentPage == 'fallback'){
-                  echo '#';
-                }else{
-                  echo 'index.php?page=fallback';
-                }
-              ?>">
+            <a class="nav__item" href="#">
               <p class="hide">Over ons</p>
             </a>
           </li>
@@ -133,30 +112,30 @@
           <ul>
             <li><a class="footerLink" href="index.php?page=lineup">Lineup</a></li>
             <li><a class="footerLink" href="http://beverse-feesten.be/"> Beverse Feesten</a></li>
-            <li> <a class="footerLink" href="index.php?page=fallback">Randactiviteiten</a></li>
-            <li> <a class="footerLink" href="index.php?page=fallback">Familie</a></li>
+            <li> <a class="footerLink" href="#">Randactiviteiten</a></li>
+            <li> <a class="footerLink" href="#">Familie</a></li>
           </ul>
         </article>
         <article class="footer__summary-switch">
           <h3>Raak betrokken</h3>
           <ul>
-            <li><a class="footerLink" href="index.php?page=fallback">Word vrijwilliger</a></li>
-            <li><a  class="footerLink" href="index.php?page=fallback">Zelf Optreden</a></li>
+            <li><a class="footerLink" href="#">Word vrijwilliger</a></li>
+            <li><a  class="footerLink" href="#">Zelf Optreden</a></li>
           </ul>
         </article>
         <article class="footer__summary-about">
           <h3>Over</h3>
           <ul>
-            <li><a class="footerLink" href="index.php?page=fallback">Geschiedenis</a></li>
-            <li><a class="footerLink" href="index.php?page=fallback">Vorige edities</a></li>
+            <li><a class="footerLink" href="#">Geschiedenis</a></li>
+            <li><a class="footerLink" href="#">Vorige edities</a></li>
           </ul>
         </article>
         <article class="footer__summary-practical">
           <h3>Praktisch</h3>
           <ul>
-            <li><a class="footerLink" href="index.php?page=fallback">Slecht weer</a></li>
-            <li><a class="footerLink" href="index.php?page=fallback">Bereikbaarheid</a></li>
-            <li><a class="footerLink" href="index.php?page=fallback">Contactgegevens</a></li>
+            <li><a class="footerLink" href="#">Slecht weer</a></li>
+            <li><a class="footerLink" href="#">Bereikbaarheid</a></li>
+            <li><a class="footerLink" href="#">Contactgegevens</a></li>
           </ul>
         </article>
         <article class="footer__summary-media">

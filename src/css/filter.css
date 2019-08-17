@@ -4,6 +4,7 @@
   @media (--sm) {
     background-image: url('../assets/img/background/lineupbg_sm.png');
     background-repeat: no-repeat;
+    background-size: cover;
 
     padding-top: 2rem;
   }
@@ -109,13 +110,13 @@
   @media (--sm) {
     margin-top: 1.5rem;
     margin-left: -4rem;
-    width: 25rem;
+    width: 100%;
   }
 }
 
 .filter__input-type {
   @media (--md) {
-    width: 50%;
+    width: 120%;
   }
 }
 

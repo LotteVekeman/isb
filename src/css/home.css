@@ -18,7 +18,7 @@
   @media (--lg) {
     margin: 0 auto;
     margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
     width: 80vw;
   }
 }
@@ -152,6 +152,8 @@ sup {
 }
 
 .btn__discover {
+  margin-top: -5rem;
+
   @media (--sm) {
     margin-left: 30%;
   }
@@ -236,7 +238,9 @@ sup {
 .edition {
   background-repeat: no-repeat;
 
-  margin-top: -3rem;
+  margin-top: -10rem;
+  padding-top: 3rem;
+  padding-bottom: -3rem;
   background-size: cover;
 
   height: 100%;
@@ -256,14 +260,13 @@ sup {
 }
 
 .edition__movie {
-  margin-bottom: 3rem;
-
   @media (max-width: 47em) {
     width: 100%;
   }
 
   @media (--md) {
     margin-left: 20%;
+    margin-bottom: 10rem;
   }
 
   @media (--lg) {
@@ -341,15 +344,18 @@ span {
 
   @media (--md) {
     display: grid;
-    grid-template-columns: 1fr repeat(2, 25rem) 1fr;
+    grid-template-columns: repeat(2, 25rem);
     grid-gap: 2rem;
     grid-template-areas:
-      ' . olympic eve .'
-      '. crazy market .';
+      ' olympic eve '
+      'crazy market ';
+
+    width: 75%;
+    margin: 0 auto;
   }
 
   @media (--lg) {
-    grid-template-areas: '. olympic eve crazy market';
+    grid-template-areas: 'olympic eve crazy market';
   }
 }
 

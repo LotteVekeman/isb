@@ -126,6 +126,8 @@
   background-image: url(../assets/img/icon/home.png);
 
   grid-area: home;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (--md) {
     display: none;
@@ -194,7 +196,6 @@
 
   @media (--xs) {
     content: '';
-    display: none;
   }
 
   @media (--md) {

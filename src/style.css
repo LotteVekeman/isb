@@ -123,17 +123,18 @@ body {
 }
 
 .item {
+  margin-bottom: 1rem;
 
   &:hover {
     filter: grayscale(100%);
   }
 
   @media (--sm) {
-    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
   }
 
   @media (--md) {
-    padding-bottom: 3rem;
   }
 }
 
