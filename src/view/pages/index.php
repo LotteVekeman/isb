@@ -184,7 +184,21 @@
               <div class="extra__slider-item-text">
                 <h3 class="extra__slider-item-title">Olympische straat</h3>
               </div>
+              <picture>
+              <source
+                      type="image/webp"
+                      media="(min-width: 0px)"
+                      srcset="assets/img/andereActiviteiten/olympischeStraat.webp 1x"
+                    />
+                  <source
+                      type="image/png"
+                      media="(min-width: 0px)"
+                      srcset="assets/img/andereActiviteiten/olympischeStraat.png 1x"
+                  />
               <img class="item__photo" src="assets/img/andereActiviteiten/olympischeStraat.png" alt="2 turnsters op een trampoline" />
+              </picture>
+
+
             </a>
           </li>
 
@@ -193,7 +207,20 @@
               <div class="extra__slider-item-text">
                 <h3 class="extra__slider-item-title">Avondmarkt</h3>
               </div>
-              <img class="item__photo" src="assets/img/andereActiviteiten/avondmarkt.png" alt="menigte aan kraampjes" />
+              <picture>
+              <source
+                      type="image/webp"
+                      media="(min-width: 0px)"
+                      srcset="assets/img/andereActiviteiten/avondmarkt.webp 1x"
+                    />
+                  <source
+                      type="image/png"
+                      media="(min-width: 0px)"
+                      srcset="assets/img/andereActiviteiten/avondmarkt.png 1x"
+                  />
+                <img class="item__photo" src="assets/img/andereActiviteiten/avondmarkt.png" alt="menigte aan kraampjes" />
+              </picture>
+
             </a>
           </li>
 
@@ -202,7 +229,20 @@
               <div class="extra__slider-item-text">
                 <h3 class="extra__slider-item-title">Gekkefietsencircuit</h3>
               </div>
-              <img class="item__photo" src="assets/img/andereActiviteiten/gekkefietsencircuit.png" alt="scouts bij een parcours" />
+              <picture>
+                <source
+                      type="image/webp"
+                      media="(min-width: 0px)"
+                      srcset="assets/img/andereActiviteiten/gekkefietsencircuit.webp 1x"
+                    />
+                  <source
+                      type="image/png"
+                      media="(min-width: 0px)"
+                      srcset="assets/img/andereActiviteiten/gekkefietsencircuit.png 1x"
+                  />
+                  <img class="item__photo" src="assets/img/andereActiviteiten/gekkefietsencircuit.png" alt="scouts bij een parcours" />
+                </picture>
+
             </a>
           </li>
 
@@ -211,7 +251,20 @@
                 <div class="extra__slider-item-text">
                   <h3 class="extra__slider-item-title">Rommelmarkt</h3>
                 </div>
-                <img class="item__photo" src="assets/img/andereActiviteiten/rommelmarkt.png" alt="mensen op een rommelmarkt" />
+                <picture>
+                  <source
+                    type="image/webp"
+                    media="(min-width: 0px)"
+                    srcset="assets/img/andereActiviteiten/rommelmarkt.webp 1x"
+                  />
+                <source
+                    type="image/png"
+                    media="(min-width: 0px)"
+                    srcset="assets/img/andereActiviteiten/rommelmarkt.png 1x"
+                />
+                    <img class="item__photo" src="assets/img/andereActiviteiten/rommelmarkt.png" alt="mensen op een rommelmarkt" />
+                </picture>
+
             </a>
           </li>
         </ul>
