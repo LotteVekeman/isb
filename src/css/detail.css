@@ -118,15 +118,6 @@
   color: white;
 }
 
-.detail-nameTitle {
-  line-height: 1.5;
-  color: var(--aqua);
-
-  @media (--md) {
-    color: var(--pink);
-  }
-}
-
 .act__detail__infoList {
   @media (min-width: 43.75em) {
     margin-left: -2rem;
@@ -135,13 +126,6 @@
   @media (--md) {
     margin-left: 0;
   }
-}
-
-.infoList-row {
-  display: flex;
-  align-items: center;
-
-  margin-bottom: 2rem;
 }
 
 .icon {

@@ -1,4 +1,3 @@
-
       <header>
         <h1 class="hidden">International TheaterFestival Beveren</h1>
         <picture >

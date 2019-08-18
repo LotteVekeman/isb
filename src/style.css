@@ -25,56 +25,8 @@ body {
 }
 /* stylelint-enable */
 
-.page__layout {
-  display: grid;
-
-  grid-gap: 1.5rem;
-  grid-template-columns: 1% 1fr 1%;
-  grid-template-areas: '. content .';
-
-  flex-direction: row;
-}
-
-.standard {
-  grid-area: content;
-}
-
-.pageHeader-image {
-  @media (--md) {
-    margin-top: -3rem;
-  }
-
-  @media (--lg) {
-    margin-top: -5rem;
-  }
-}
-
-.nameHeader {
-  width: 80%;
-
-  @media (min-width: 69em) {
-    width: 70%;
-  }
-
-  @media (min-width: 82em) {
-    width: 60%;
-  }
-}
-
-.namesIntro {
-  line-height: 1.5;
-
-  margin-top: 1.5rem;
-  margin-bottom: 2rem;
-}
-
 .hidden {
   display: none;
-}
-
-.title {
-  margin-top: 2rem;
-  color: black;
 }
 
 .btn {
@@ -97,31 +49,6 @@ body {
   }
 }
 
-.infoDiv {
-  margin-top: -6.5rem;
-  margin-bottom: 3rem;
-
-  width: 75vw;
-  max-width: 35rem;
-}
-
-.info {
-  /* width: 75vw; */
-  height: 5rem;
-
-  display: grid;
-  grid-template-rows: repeat(2, 2rem);
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  grid-auto-flow: column;
-  text-align: center;
-
-  border: solid .25rem #97217e;
-  border-radius: .5rem;
-
-  margin-top: -3rem;
-}
-
 .item {
   margin-bottom: 1rem;
 
@@ -136,11 +63,6 @@ body {
 
   @media (--md) {
   }
-}
-
-button {
-  height: 10.5rem;
-  width: 9rem;
 }
 
 h1,
@@ -196,57 +118,40 @@ h3 {
   margin-left: 1rem;
 }
 
-.pageHeader2 {
-  padding-bottom: 10rem;
-  margin-top: -3rem;
-  z-index: auto;
-  background-image: linear-gradient(white, var(--light));
-
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.error__name {
-  margin-bottom: 2.4rem;
-  margin-left: 1rem;
+.pageLayout {
+  margin-bottom: 9rem;
 
   @media (--sm) {
-    width: 95vw;
+    margin-left: 1rem;
   }
 
   @media (--md) {
-    width: 60vw;
-  }
-
-  @media (min-width: 78.75em) {
-    width: 40vw;
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 
   @media (--lg) {
-    width: 35vw;
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 10rem;
+    width: 80vw;
   }
 }
 
-.error__comment {
-  margin-bottom: 3rem;
-
+.pageLayout__header {
   @media (--sm) {
-    width: 95vw;
+    margin-bottom: 2rem;
   }
 
   @media (--md) {
-    width: 60vw;
+    margin-bottom: 3rem;
   }
+}
 
-  @media (min-width: 78.75em) {
-    width: 40vw;
-  }
+.pageLayout__intro {
+  line-height: 1.5;
 
-  @media (--lg) {
-    width: 35vw;
+  @media (--md) {
+    width: 60%;
   }
 }
