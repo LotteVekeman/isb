@@ -69,6 +69,7 @@
 
   @media (--sm) {
     height: 30rem;
+    width: 100vw;
   }
 
   @media (--md) {

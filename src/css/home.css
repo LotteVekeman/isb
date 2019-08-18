@@ -230,6 +230,16 @@ sup {
   }
 }
 
+.promo {
+  @media (--sm) {
+    padding-left: 1rem;
+  }
+
+  @media (--md) {
+    padding-left: 0;
+  }
+}
+
 .edition {
   background-repeat: no-repeat;
 

@@ -6,7 +6,11 @@ class DAO {
   private static $dbPass = "isbstraattheater@1";
   private static $sharedPDO;
 
-
+  // private static $dbHost = "localhost";
+  // private static $dbName = "isb";
+  // private static $dbUser = "isbuser";
+  // private static $dbPass = "isbpass";
+  // private static $sharedPDO;
 
 
   protected $pdo;

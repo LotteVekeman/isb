@@ -158,7 +158,7 @@
         <section class="pageLayout">
           <header class="pageLayout__header">
            <h2>Editie 2018</h2>
-           <p class="pageLayout__intro">
+           <p class="pageLayout__intro promo">
               Nog niet helemaal overtuigd? Bekijk hieronder een promofilmpje om de sfeer op te snuiven van onze vorige editie.
               Like en sharen mag altijd!
            </p>
